@@ -8,7 +8,7 @@ import hamb from '/public/icons/menu-hamburger-svgrepo-com.svg'
 export const Nav = () => {
     return (
         <>              
-            <nav className={` ${styles.nav} sm:w-full w-full h-[60px]  flex flex-row items-center justify-between decoration-slate-800 `}>
+            <nav className={` ${styles.nav} sm:w-full w-full h-24  flex flex-row items-center justify-between decoration-slate-800 `}>
                 <Image 
                     className="pl-4"
                     src={hamb}
