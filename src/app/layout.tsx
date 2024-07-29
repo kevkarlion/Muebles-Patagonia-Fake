@@ -1,8 +1,16 @@
 
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
-import { Nav } from '../components/shared/Nav';
-import '../sass/globals.sass';
+
+import { BarNav } from "@/components/shared/BarNav"
+
+
+
+
+
+import 'bootstrap/dist/css/bootstrap.min.css'
+import '../sass/globals.sass'
+
 
 
 const inter = Inter({ subsets: ["latin"] });
@@ -16,7 +24,7 @@ export default function RootLayout({ children ,}: Readonly <{ children: React.Re
   return (
     <html lang="en">
       <body className={inter.className}>
-        <Nav />
+        <BarNav />
         {children}
       </body>
     </html>
