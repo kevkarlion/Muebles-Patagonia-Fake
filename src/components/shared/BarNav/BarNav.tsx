@@ -4,19 +4,22 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import Link from 'next/link';
+import styles from './BarNav.module.sass'
+
 
 export const BarNav = () => {
   return (
     <>
-      <Navbar expand="lg" className="bg-body-tertiary">
+      <Navbar expand="lg" className={`${styles['custom-navbar']}  bg-body-tertiary`}  >
         <Container className=''>
-            <Navbar.Brand href="#home">Stark Industries</Navbar.Brand>
+            <Navbar.Brand href="#home"><h1>Stark Industries</h1></Navbar.Brand>
+            {/* burger menu*/}  
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="me-auto">
                 <Nav.Link href="#home">Home</Nav.Link>
                 <Nav.Link href="#link">Link</Nav.Link>
-                <NavDropdown title="Dropdown" id="basic-nav-dropdown">
+                <NavDropdown title="Servicios" id="basic-nav-dropdown" className={`${styles['custom-navbar__dropdown']}`}>
                 <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
                 <NavDropdown.Item href="#action/3.2">
                     Another action
