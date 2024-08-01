@@ -1,4 +1,6 @@
 
+
+import { Roboto } from 'next/font/google'
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 
@@ -12,7 +14,10 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 import '../sass/globals.sass'
 
 
-
+const roboto = Roboto({
+  weight: ['100', '300', '500', '700'],
+  subsets: ['latin']
+})
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
@@ -23,7 +28,7 @@ export const metadata: Metadata = {
 export default function RootLayout({ children ,}: Readonly <{ children: React.ReactNode;}>) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body className={roboto.className}>
         <BarNav />
         {children}
       </body>
