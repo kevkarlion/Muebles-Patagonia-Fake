@@ -10,16 +10,16 @@ import styles from './BarNav.module.sass'
 export const BarNav = () => {
   return (
     <>
-      <Navbar expand="lg" className={`${styles['custom-navbar']}  bg-body-tertiary`}  >
+      <Navbar bg="dark" data-bs-theme="dark" expand="lg" className={`${styles['custom-navbar']}  bg-body-tertiary`}  >
         <Container className=''>
-            <Navbar.Brand href="#home"><h1>Stark Industries</h1></Navbar.Brand>
+            <Navbar.Brand href="#home"><h1>Muebles patagónicos</h1></Navbar.Brand>
             {/* burger menu*/}  
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="me-auto">
                 <Nav.Link href="#home">Home</Nav.Link>
                 <Nav.Link href="#link">Link</Nav.Link>
-                <NavDropdown title="Servicios" id="basic-nav-dropdown" className={`${styles['custom-navbar__dropdown']}`}>
+                <NavDropdown title='Servicios'  id="basic-nav-dropdown">
                 <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
                 <NavDropdown.Item href="#action/3.2">
                     Another action
