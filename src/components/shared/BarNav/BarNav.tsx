@@ -14,9 +14,9 @@ export const BarNav = () => {
   return (
     <>
       {['md'].map((expand) => (
-        <Navbar key={expand} expand={expand} className= {`${styles['custom-navbar']} bg-body-tertiary h-16` }>
+        <Navbar bg="dark" data-bs-theme="dark" key={expand} expand={expand} className= {`${styles['custom-navbar']} bg-body-tertiary h-20` }>
           <Container fluid>
-            <Navbar.Brand className='ml-3' href="#">Muebles Patagonia</Navbar.Brand>
+            <Navbar.Brand className='ml-3' href="#">MUEBLES PATAGONIA</Navbar.Brand>
             <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-${expand}`} />
             <Navbar.Offcanvas
               id={`offcanvasNavbar-expand-${expand}`}
@@ -34,9 +34,12 @@ export const BarNav = () => {
                     title="PRODUCTOS"
                     id={`offcanvasNavbarDropdown-expand-${expand}`}
                   >
-                    <NavDropdown.Item href="#action3">Action</NavDropdown.Item>
+                    <NavDropdown.Item href="#action3">Comedor</NavDropdown.Item>
                     <NavDropdown.Item href="#action4">
-                      Another action
+                      Sillones
+                    </NavDropdown.Item>
+                    <NavDropdown.Item href="#action4">
+                      Cocina
                     </NavDropdown.Item>
                     <NavDropdown.Divider />
                     <NavDropdown.Item href="#action5">
