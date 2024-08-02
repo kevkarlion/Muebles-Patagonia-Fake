@@ -1,0 +1,1 @@
+export { Favoritos } from './Favoritos'

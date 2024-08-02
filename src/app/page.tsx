@@ -1,5 +1,11 @@
+import { Hero } from "@/components/Hero"
+import { Main } from "@/components/Main"
+
 export default function Home () {
   return (
-    <h1>Hola mundo</h1>
+    <>
+      <Hero  />
+      <Main />
+    </>
   )
 }
