@@ -9,7 +9,7 @@ export const Hero = () => {
     <>
       <Carousel data-bs-theme="dark" className={`${styles['main-container']}`} >
         <Carousel.Item>
-          <div className="relative w-full h-96">
+          <div className="relative w-full h-[650px]">
             <Image
               src="/images-carrusel/image1.jpg"
 
@@ -28,7 +28,7 @@ export const Hero = () => {
               
               //Fit:adaptar
               //atributo actualizado
-              style={{ objectFit: 'contain' }}
+              style={{ objectFit: 'cover' }}
             />
             <h1>Primer Slide</h1>
           </div>
@@ -36,13 +36,13 @@ export const Hero = () => {
         </Carousel.Item>
         <Carousel.Item>
           {/* <ExampleCarouselImage text="Second slide" /> */}
-          <div className="relative w-full h-96">
+          <div className="relative w-full h-[650px]">
             <Image
               src="/images-carrusel/image2.jpg"
               alt="image-carrusel"
               sizes="(max-width: 768px) 100vw, 33vw"
               fill={true}
-              style={{ objectFit: 'contain' }}
+              style={{ objectFit: 'cover' }}
             />
             <h1>Segundp Slide</h1>
           </div>
@@ -53,13 +53,14 @@ export const Hero = () => {
         </Carousel.Item>
         <Carousel.Item>
           {/* <ExampleCarouselImage text="Third slide" /> */}
-          <div className="relative w-full h-96">
+          <div className="relative w-full h-[650px]">
             <Image
               src="/images-carrusel/image3.jpg"
               alt="image-carrusel"
               fill={true}
               sizes="(max-width: 768px) 100vw, 33vw"
-              style={{ objectFit: 'contain' }}
+              style={{ objectFit: 'cover' }}
+              priority
             />
             <h1>Tercer Slide</h1>
           </div>
