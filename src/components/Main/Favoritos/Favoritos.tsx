@@ -15,7 +15,7 @@ import Image from "next/image";
 
 export const Favoritos = () => {
   return (
-    <div className= {`${styles['container-main'] } `  }>
+    <div className= {`${styles['container-main'] } py-20 `  } id="design">
       <Container className="flex flex-col w-full h-auto gap-20 ">
         <h1 className={`flex justify-start text-4xl sm:text-7xl mt-16 uppercase  ${abrilFatface.className}`}>
           Diseños exclusivos
