@@ -1,9 +1,11 @@
 import { Carrusel } from './Carrusel'
+import { Presentation } from './Presentation';
 
 export const Hero = () => {
   return (
     <>
-      <Carrusel />
+      <Presentation />
+      {/* <Carrusel /> */}
     </>
   );
 }
