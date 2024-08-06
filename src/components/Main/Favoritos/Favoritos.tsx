@@ -3,14 +3,21 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Button from "react-bootstrap/Button";
 import styles from './Favoritos.module.sass'
+import { Abril_Fatface } from 'next/font/google'
+
+
+const abrilFatface = Abril_Fatface ({
+  weight: ['400'],
+  subsets: ['latin']
+})
 
 import Image from "next/image";
 
 export const Favoritos = () => {
   return (
-    <div className= {`${styles['container-main']}`}>
+    <div className= {`${styles['container-main'] } py-20 `  } id="design">
       <Container className="flex flex-col w-full h-auto gap-20 ">
-        <h1 className="flex justify-start text-4xl sm:text-7xl mt-16 ">
+        <h1 className={`flex justify-start text-4xl sm:text-7xl mt-16 uppercase  ${abrilFatface.className}`}>
           Diseños exclusivos
         </h1>
         {/* Living */}
@@ -28,8 +35,8 @@ export const Favoritos = () => {
                   />
           </Col>
           <Col sm={12} lg={5} className="flex flex-col justify-center ">
-                  <h2 className="text-3xl uppercase mb-4 mt-3 text-center lg:text-start">Living</h2>
-                  <p className="text-left mb-4 ">
+                  <h2 className={`text-3xl uppercase mb-4 mt-3 text-center lg:text-start ${abrilFatface.className}`}>Living</h2>
+                  <p className="text-left mb-4 font-light	">
                   Transforma tu espacio con nuestra colección de muebles de diseño
                   para living, donde cada pieza es una obra maestra de estilo y
                   comodidad. Descubre sofás, mesas y accesorios creados para brindar
@@ -37,8 +44,8 @@ export const Favoritos = () => {
                   a tus invitados con elegancia.
                   </p>
                   <Button
-                  variant="light"
-                  className="w-32 place-self-center mb-3 sm:w-36 sm:h-12 lg:place-self-start text-base uppercase font-bold"
+                  variant="outline-light"
+                  className="w-32 place-self-center mb-3 sm:w-36 sm:h-12  text-base uppercase font-normal	"
                   >
                   Colección
                   </Button>{" "}
@@ -63,13 +70,13 @@ export const Favoritos = () => {
             lg={6}
             className="flex flex-col justify-center lg:order-1"
           >
-                  <h2 className="text-3xl uppercase mb-4 mt-3 text-center lg:text-start">Comedor</h2>
-                  <p className="text-left mb-4 ">
+                  <h2 className={`text-3xl uppercase mb-4 mt-3 text-center lg:text-start ${abrilFatface.className}`}>Comedor</h2>
+                  <p className="text-left mb-4 font-light">
                   Crea un ambiente acogedor y sofisticado en tu hogar con nuestras soluciones de diseño para comedores. Cada pieza está diseñada para ofrecer tanto funcionalidad como estilo, proporcionando el escenario perfecto para cenas familiares y reuniones sociales. Con una combinación de materiales de alta calidad y un diseño contemporáneo, nuestros comedores están pensados para realzar la belleza de tu hogar mientras brindan comodidad y durabilidad. Descubre cómo nuestras opciones pueden transformar tu comedor en un espacio donde cada comida se convierte en una experiencia memorable.{" "}
                   </p>
                   <Button
-                  variant="light"
-                  className="w-32 place-self-center mb-3 sm:w-36 sm:h-12 lg:place-self-end text-base uppercase font-bold"
+                  variant="outline-light"
+                  className="w-32 place-self-center mb-3 sm:w-36 sm:h-12  text-base uppercase font-normal"
                   >
                   Colección
                   </Button>{" "}
@@ -92,13 +99,13 @@ export const Favoritos = () => {
                   />
           </Col>
           <Col sm={12} lg={5} className="flex flex-col justify-center items-center">
-                  <h2 className="text-3xl uppercase mb-4 mt-3 text-center lg:text-start">Cocina</h2>
-                  <p className="text-left mb-4 ">
+                  <h2 className={`text-3xl uppercase mb-4 mt-3 text-center lg:text-start ${abrilFatface.className}`}>Cocina</h2>
+                  <p className="text-left mb-4 font-light">
                   Transforma tu cocina en el corazón del hogar con nuestras soluciones de diseño innovadoras. Cada pieza está meticulosamente diseñada para combinar estilo y funcionalidad, ofreciendo un espacio que no solo refleja tu buen gusto, sino que también optimiza la experiencia culinaria. Desde superficies elegantes y modernas hasta sistemas de almacenamiento inteligentes, nuestras cocinas están pensadas para crear ambientes que inspiran creatividad y disfrute en cada comida. Explora nuestra colección y descubre cómo podemos ayudarte a diseñar la cocina de tus sueños.
                   </p>
                   <Button
-                  variant="light"
-                  className="w-32 place-self-center mb-3 sm:w-36 sm:h-12 lg:place-self-start text-base uppercase font-bold"
+                  variant="outline-light"
+                  className="w-32 place-self-center mb-3 sm:w-36 sm:h-12  text-base uppercase font-normal"
                   >
                   Colección
                   </Button>{" "}
@@ -124,13 +131,13 @@ export const Favoritos = () => {
             lg={6}
             className="flex flex-col justify-center lg:order-first"
           >
-                  <h2 className="text-3xl uppercase mb-4 mt-3 text-center lg:text-start">Relajación</h2>
-                  <p className="text-left mb-4 lg:text-start">
+                  <h2 className={`text-4xl uppercase mb-4 mt-3 text-center lg:text-start ${abrilFatface.className}`}>Relajación</h2>
+                  <p className="text-left mb-4 lg:text-start font-light">
                   Redefine el concepto de diversión en casa con nuestras áreas de entretenimiento diseñadas para combinar estilo y confort. Perfectas para reuniones sociales, noches de película o momentos de relajación, nuestras soluciones crean espacios que invitan a disfrutar y compartir. Encuentra la inspiración para transformar tu hogar en el lugar ideal para el ocio y el disfrute.
                   </p>
                   <Button
-                  variant="light"
-                  className="w-32 place-self-center mb-3 sm:w-36 sm:h-12 lg:place-self-end text-base uppercase font-bold"
+                  variant="outline-light"
+                  className="w-32 place-self-center mb-3 sm:w-36 sm:h-12  text-base uppercase font-normal"
                   >
                   Colección
                   </Button>{" "}

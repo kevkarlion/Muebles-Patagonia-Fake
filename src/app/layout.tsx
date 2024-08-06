@@ -1,6 +1,7 @@
 
 
 import { Roboto } from 'next/font/google'
+
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 
@@ -12,6 +13,9 @@ import { BarNav } from "@/components/shared/BarNav"
 
 import 'bootstrap/dist/css/bootstrap.min.css'
 import '../sass/globals.sass'
+
+
+
 
 
 const roboto = Roboto({
