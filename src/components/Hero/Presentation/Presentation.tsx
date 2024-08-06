@@ -1,5 +1,6 @@
-import { useEffect, useState } from "react";
-import { motion } from "framer-motion";
+
+import Button from 'react-bootstrap/Button';
+
 import { Abril_Fatface } from "next/font/google";
 import styles from "./Presentation.module.sass";
 
@@ -13,12 +14,12 @@ export const Presentation = () => {
 
       
   return (
-    <div className="w-full flex pt-20 h-[860px] mb-1" id="home">
-      <div className={` ${styles["bg-hero"]} relative w-full h-[860px]`}>
+    <div className="w-full flex pt-20 h-[800px] mb-1" id="home">
+      <div className={` ${styles["bg-hero"]} relative w-full h-[800px]`}>
         <div className="flex flex-col h-full px-3 items-center text-center justify-center  z-10">
-          <div className="flex flex-col flex-1 w-full items-center justify-center lg:w-3/4  lg:self-start  lg:pl-9 mb-28">
+          <div className="flex flex-col flex-1 w-full mb-14  items-center justify-center lg:w-3/4  lg:self-start  lg:pl-9 lg:mb-36 ">
             <h1
-              className={`${abrilFatface.className} uppercase text-6xl text-white drop-shadow-xl mb-12 lg:text-start  px-4`}
+              className={`${abrilFatface.className} uppercase text-6xl px-4 text-white drop-shadow-xl mb-6 mt-6 lg:text-start `}
             >
               Muebles de Diseño Exclusivo para Cada Espacio
             </h1>
@@ -27,6 +28,7 @@ export const Presentation = () => {
               nuestras piezas de diseño y muebles industriales. Transforma tu
               hogar con estilo.
             </h2>
+            <Button variant="light" className='self-center w-56 mt-4 lg:self-start lg:ml-9  lg:h-11	uppercase' >Ofertas especiales</Button>{' '}
           </div>
         </div>
       </div>
