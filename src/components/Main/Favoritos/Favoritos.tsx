@@ -131,7 +131,7 @@ export const Favoritos = () => {
             lg={6}
             className="flex flex-col justify-center lg:order-first"
           >
-                  <h2 className={`text-4xl uppercase mb-4 mt-3 text-center lg:text-start ${abrilFatface.className}`}>Relajación</h2>
+                  <h2 className={`text-4xl uppercase mb-4 mt-3 text-center lg:text-start ${abrilFatface.className}`}>Relax</h2>
                   <p className="text-left mb-4 lg:text-start font-normal">
                   Redefine el concepto de diversión en casa con nuestras áreas de entretenimiento diseñadas para combinar estilo y confort. Perfectas para reuniones sociales, noches de película o momentos de relajación, nuestras soluciones crean espacios que invitan a disfrutar y compartir. Encuentra la inspiración para transformar tu hogar en el lugar ideal para el ocio y el disfrute.
                   </p>
