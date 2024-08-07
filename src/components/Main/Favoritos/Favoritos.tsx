@@ -17,7 +17,7 @@ export const Favoritos = () => {
   return (
     <div className= {`${styles['container-main'] } `  } id="design">
       <Container className="flex flex-col w-full h-auto gap-20 ">
-        <h1 className={`flex justify-start text-4xl sm:text-7xl mt-16 uppercase ${abrilFatface.className}`}>
+        <h1 className={`flex justify-start text-4xl sm:text-6xl mt-16 uppercase ${abrilFatface.className}`}>
           Diseños exclusivos
         </h1>
         {/* Living */}
