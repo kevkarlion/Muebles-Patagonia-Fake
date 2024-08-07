@@ -12,7 +12,7 @@ export const AboutUs = () => {
       return (
             <div className={` ${styles['container-main']} flex flex-col mt-10 justify-center items-center text-center px-5 md:gap-11 mb-8 md:mb-16` }  id='about-us'>
                   <div className='mb-14 flex flex-col md:flex md:flex-row mt-9 gap-4'>
-                        <h1 className={`${styles['title-section']} text-center uppercase text-5xl   font-semibold md:text-5xl`}>Sobre nosotros</h1>
+                        <h1 className={`${styles['title-section']} text-center uppercase text-5xl   font-semibold md:text-6xl`}>Sobre nosotros</h1>
                         <Button variant="dark" className='self-center w-44 md:w-48 md:h-11  uppercase' >contactanos</Button>{' '}
                   </div>
                   <div className='flex flex-col md:flex-row md:gap-5 ' > 
