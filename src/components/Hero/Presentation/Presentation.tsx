@@ -25,7 +25,7 @@ export const Presentation = () => {
             </h1>
             <h2 className="text-xl font-light  px-9 md:text-2xl  text-white drop-shadow-xl lg:text-xl lg:text-start lg:pr-28 xl:pr-96">
               Descubre la perfecta combinación de elegancia y durabilidad con
-              nuestras piezas de diseño y muebles industriales. Transforma tu
+              nuestras piezas de diseño. Transforma tu
               hogar con estilo.
             </h2>
             <Button variant="light" className='self-center w-56 h-14 mt-4 lg:self-start lg:ml-9  lg:h-11	uppercase' >Ofertas especiales</Button>{' '}
