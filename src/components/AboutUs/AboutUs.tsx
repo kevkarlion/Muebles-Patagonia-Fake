@@ -11,8 +11,8 @@ const abrilFatface = Abril_Fatface ({
 export const AboutUs = () => {
       return (
             <div className={` ${styles['container-main']} flex flex-col mt-10 justify-center items-center text-center px-5 md:gap-11 mb-8 md:mb-16` }  id='about-us'>
-                  <div className='mb-14 flex flex-col mt-9 gap-4   lg:flex-row '>
-                        <h1 className={`${styles['title-section']} whitespace-nowrap text-center uppercase text-5xl max-w-max  font-semibold md:text-6xl`}>Sobre nosotros</h1>
+                  <div className='mb-14 flex flex-col mt-9 gap-4  lg:flex-row '>
+                        <h1 className={`${styles['title-section']}  text-center uppercase text-5xl max-w-max  font-semibold md:text-6xl md:whitespace-nowrap`}>Sobre nosotros</h1>
                         <Button variant="dark" className='self-center w-44 md:w-48 md:h-11 md:ml-3 uppercase' >contactanos</Button>{' '}
                   </div>
                   <div className='flex flex-col md:flex-row md:gap-5 ' > 
