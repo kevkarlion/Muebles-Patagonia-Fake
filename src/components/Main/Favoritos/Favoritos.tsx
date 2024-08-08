@@ -15,7 +15,7 @@ import Image from "next/image";
 
 export const Favoritos = () => {
   return (
-    <div className= {`${styles['container-main'] } `  } id="design">
+    <div className= {`${styles['container-main'] } mb-16`  } id="design">
       <Container className="flex flex-col w-full h-auto gap-20 ">
         <h1 className={`flex justify-start text-4xl sm:text-6xl mt-16 uppercase ${abrilFatface.className}`}>
           Diseños exclusivos
@@ -23,6 +23,7 @@ export const Favoritos = () => {
         {/* Living */}
         <Row className="flex justify-center ">
           <Col sm={12} lg={6}>
+
                   <Image
                   className="rounded-lg"
                   src="/images-main/living.jpg"
