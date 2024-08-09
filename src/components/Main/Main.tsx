@@ -4,6 +4,7 @@ import Col from 'react-bootstrap/Col';
 
 import { Favoritos } from './Favoritos';
 import { Formulario } from './Form';
+import { Footer } from '../shared/Footer/Footer';
 
 export const Main = () => {
       return (
@@ -11,6 +12,7 @@ export const Main = () => {
             <>
                   <Favoritos />
                   <Formulario />
+                  <Footer />
             </>    
       );
 }
