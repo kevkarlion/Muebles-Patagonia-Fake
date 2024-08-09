@@ -8,11 +8,10 @@ export const Footer = () => {
   return (
     
       <footer className={`text-white py-4 mt-auto ${styles['container-footer']}`}>
-        <div className="container">
-          <div className="flex flex-col gap-3 md:flex-row md:justify-between">
-         
-            <div className="flex flex-col ">
-              <h5>Visita nuestras redes</h5>
+        <div className="container mt-12 sm:px-8 ">
+          <div className="flex flex-col gap-3 sm:flex-row sm:justify-between lg:mx-40">
+            <div className="flex flex-col justify-center items-center">
+              <h5 className="text-xl">Visita nuestras redes</h5>
               <ul className="flex flex-col gap-3 mt-4 ml-4">
                 <li className="flex gap-4 ">
                   <Image 
@@ -49,8 +48,8 @@ export const Footer = () => {
                 </li>
               </ul>
             </div>
-            <div className="col-md-4 ">
-              <h5>Contacto</h5>
+            <div className="col-md-4 flex flex-col items-center justify-center">
+              <h5 className="text-xl text-center">Contacto</h5>
               <address className="flex flex-col gap-3 mt-4 ml-4">
                 Calle Falsa 123
                 <br />
@@ -64,7 +63,7 @@ export const Footer = () => {
               </address>
             </div>
           </div>
-          <div className="row mt-3">
+          <div className="row mt-16">
             <div className="col text-center">
               <p className="mb-0">
                 &copy; 2024 MUEBLES PATAGONIA. Todos los derechos reservados.
