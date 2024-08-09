@@ -60,7 +60,7 @@ export const BarNav = () => {
                     </NavDropdown.Item>
                   </NavDropdown>
                   <Nav.Link href="#about-us">NOSOTROS</Nav.Link>
-                  <Nav.Link href="#action2">CONTACTO</Nav.Link>
+                  <Nav.Link href="#form">CONTACTO</Nav.Link>
                 </Nav>
              
               </Offcanvas.Body>
