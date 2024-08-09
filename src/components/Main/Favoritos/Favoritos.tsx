@@ -15,9 +15,9 @@ import Image from "next/image";
 
 export const Favoritos = () => {
   return (
-    <div className= {`${styles['container-main'] } mb-16`  } id="design">
+    <div className= {`${styles['container-main'] } mb-16 md:px-12 `} id="design">
       <Container className="flex flex-col w-full h-auto gap-20 ">
-        <h1 className={`flex justify-start text-4xl sm:text-6xl mt-16 uppercase ${abrilFatface.className}`}>
+        <h1 className={`flex justify-center text-center md:justify-start md:text-start text-4xl sm:text-6xl mt-16 uppercase ${abrilFatface.className}`}>
           Diseños exclusivos
         </h1>
         {/* Living */}
@@ -86,7 +86,7 @@ export const Favoritos = () => {
         </Row>
 
         {/* Cocina */}
-        <Row className="flex justify-center items-center">
+        <Row className="flex justify-center ">
           <Col sm={12} lg={6}>
                   <Image
                   className="rounded-lg"
@@ -102,7 +102,7 @@ export const Favoritos = () => {
           <Col sm={12} lg={6} className="flex flex-col justify-center">
                   <h2 className={`text-3xl uppercase mb-4 mt-3 text-center lg:text-start ${abrilFatface.className}`}>Cocina</h2>
                   <p className="text-left mb-4 font-normal">
-                  Transforma tu cocina en el corazón del hogar con nuestras soluciones de diseño innovadoras. Cada pieza está meticulosamente diseñada para combinar estilo y funcionalidad, ofreciendo un espacio que no solo refleja tu buen gusto, sino que también optimiza la experiencia culinaria. Desde superficies elegantes y modernas hasta sistemas de almacenamiento inteligentes, nuestras cocinas están pensadas para crear ambientes que inspiran creatividad y disfrute en cada comida.
+                  Transforma tu cocina en el corazón del hogar con nuestras soluciones de diseño innovadoras. Cada pieza está meticulosamente diseñada para combinar estilo y funcionalidad, ofreciendo un espacio que no solo refleja tu buen gusto, sino que también optimiza la experiencia culinaria. Nuestras cocinas están pensadas para crear ambientes que inspiran creatividad y disfrute en cada comida.
                   </p>
                   <Button
                   variant="dark"

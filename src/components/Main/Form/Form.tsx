@@ -17,9 +17,9 @@ const abrilFatface = Abril_Fatface ({
 
 export const Formulario = () => {
   return (
-    <Form className={` ${styles['container-form']} px-4 mb-6 w-full`} id='form'>
+    <Form className={` ${styles['container-form']} px-4  w-full pb-11`} id='form'>
 
-      <div className={`flex flex-col justify-center items-center text-center gap-3 mb-6`}>
+      <div className={`flex flex-col justify-center items-center text-center gap-3 mb-6 pt-11`}>
         <h1 className={`  ${abrilFatface.className} text-4xl sm:text-6xl`}>Escribenos</h1>
         <h2 className='text-xl font-light'>Estamos para ayudarte a encontrar tu diseño perfecto</h2>
       </div>
@@ -66,7 +66,6 @@ export const Formulario = () => {
             Enviar
           </Button>
       </div>
-   
   </Form>
   );
 };
