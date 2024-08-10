@@ -95,7 +95,7 @@ export const Footer = () => {
           </div>
           <div className="row mt-16">
             <div className="col text-center font-light">
-              <p className="mb-0">
+              <p className="mb-0 text-sm">
                 &copy; 2024 MUEBLES PATAGONIA. Todos los derechos reservados.
               </p>
             </div>
