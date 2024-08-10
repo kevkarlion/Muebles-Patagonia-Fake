@@ -7,7 +7,7 @@ import styles from './Footer.module.sass'
 export const Footer = () => {
   return (
     
-      <footer className={`text-white py-4 mt-auto ${styles['container-footer']}`}>
+      <footer className={`text-white py-4 mt-auto ${styles['container-footer']}`} id="redes">
         <div className="container mt-12 sm:px-8 ">
           <div className="flex flex-col gap-3 sm:flex-row sm:justify-between lg:mx-40">
             <div className="flex flex-col justify-start items-center mb-3 md:!mb-0">
