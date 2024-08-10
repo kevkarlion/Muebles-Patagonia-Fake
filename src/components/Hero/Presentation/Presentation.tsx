@@ -1,6 +1,6 @@
 
 import Button from 'react-bootstrap/Button';
-
+import Image from 'next/image';
 import { Abril_Fatface } from "next/font/google";
 import styles from "./Presentation.module.sass";
 
@@ -28,7 +28,17 @@ export const Presentation = () => {
               nuestras piezas de diseño y muebles industriales. Transforma tu
               hogar con estilo.
             </h2>
-            <Button variant="light" className='self-center w-56 h-14 mt-4 lg:self-start lg:ml-9  lg:h-11	uppercase' >Ofertas especiales</Button>{' '}
+            <Button  className='text-black self-center hover:bg-amber-400 w-56 h-14 mt-4 lg:self-start lg:ml-9  lg:h-11	uppercase border-black !border-2  bg-amber-300' >
+               <span>
+                <Image 
+                  width={40}
+                  height={40}
+                  alt='icon-click'
+                  src={'/icons/click-hand.svg'}
+                />
+                </span> 
+               
+               Ofertas especiales</Button>{' '}
           </div>
         </div>
       </div>
