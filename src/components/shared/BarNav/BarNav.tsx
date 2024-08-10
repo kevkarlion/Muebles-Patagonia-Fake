@@ -23,7 +23,7 @@ export const BarNav = () => {
   return (
     <>
       {['md'].map((expand) => (
-        <Navbar bg="dark" data-bs-theme="ligth"  fixed="top" key={expand} expand={expand} className= {`${styles['custom-navbar']} bg-body-tertiary h-20  ` }>
+        <Navbar bg="dark" data-bs-theme="ligth"  fixed="top" key={expand} expand={expand} className= {`${styles['custom-navbar']} bg-body-tertiary h-20  drop-shadow-xl` }>
           <Container fluid>
             <Navbar.Brand className={`ml-3  uppercase ${abrilFatface.className}`} href="#">Muebles Patagonia</Navbar.Brand>
             <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-${expand}`} />
@@ -39,27 +39,11 @@ export const BarNav = () => {
                 <Nav className="justify-content-end flex-grow-1 pe-3">
                   <Nav.Link href="#action1">HOME</Nav.Link>
                   
-                  <NavDropdown
-                    title="PRODUCTOS"
-                    id={`offcanvasNavbarDropdown-expand-${expand}`}
-                  >
-                    <NavDropdown.Item href="#action3">Comedor</NavDropdown.Item>
-                    <NavDropdown.Item href="#action4">
-                      Exclusivos
-                    </NavDropdown.Item>
-                    <NavDropdown.Item href="#action4">
-                      Sillones
-                    </NavDropdown.Item>
-                    <NavDropdown.Item href="#action4">
-                      Cocina
-                    </NavDropdown.Item>
-                    <NavDropdown.Divider />
-                    <NavDropdown.Item href="#action5">
-                      Something else here
-                    </NavDropdown.Item>
-                  </NavDropdown>
+                
+                  <Nav.Link href="#action2">DISEÑOS</Nav.Link>
                   <Nav.Link href="#action2">NOSOTROS</Nav.Link>
                   <Nav.Link href="#action2">CONTACTO</Nav.Link>
+                  <Nav.Link href="#action2">REDES</Nav.Link>
                 </Nav>
              
               </Offcanvas.Body>
