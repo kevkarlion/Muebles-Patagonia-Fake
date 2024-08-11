@@ -28,17 +28,18 @@ export const Presentation = () => {
               nuestras piezas de diseño. Transforma tu
               hogar con estilo.
             </h2>
-            <Button  className='text-black self-center hover:bg-amber-400 w-56 h-14 mt-4 lg:self-start lg:ml-9  lg:h-11	uppercase border-black !border-2  bg-amber-300' >
-               <span>
+            <Button  className='text-black self-center hover:bg-amber-400 w-60 !h-14 mt-4 lg:self-start lg:ml-9  lg:h-11	uppercase border-black !border-2  bg-amber-300 relative ' >
+               <span className='flex justify-center items-center w-full'>
+                Ofertas Especiales
                 <Image 
-                  width={40}
-                  height={40}
+                  className='absolute right-[5px] bottom-[5px]'
+                  width={25}
+                  height={25}
                   alt='icon-click'
                   src={'/icons/click-hand.svg'}
                 />
                 </span> 
-               
-               Ofertas especiales</Button>{' '}
+            </Button>{' '}
           </div>
         </div>
       </div>
