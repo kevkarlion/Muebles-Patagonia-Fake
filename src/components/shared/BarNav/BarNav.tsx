@@ -39,8 +39,8 @@ export const BarNav = () => {
               <Offcanvas.Body>
                 <Nav className="justify-content-end flex-grow-1 pe-3">
                   <Nav.Link href="#home">HOME</Nav.Link>
-                  <Nav.Link href="#design">DISEÑOS</Nav.Link>
                   <Nav.Link href="#about-us">NOSOTROS</Nav.Link>
+                  <Nav.Link href="#design">DISEÑOS</Nav.Link>
                   <Nav.Link href="#form">CONTACTO</Nav.Link>
                   <Nav.Link href="#redes">REDES</Nav.Link>
                 </Nav>
