@@ -23,7 +23,7 @@ export const Presentation = () => {
             >
               Muebles de Diseño Exclusivo para Cada Espacio
             </h1>
-            <h2 className="text-xl w-[450px] lg:w-[500px]  font-light px-4 md:text-2xl  text-white drop-shadow-xl lg:text-xl lg:text-start lg:pr-28 xl:pr-96">
+            <h2 className="text-xl w-[280px] md:w-[450px] lg:w-[500px]  font-light px-4 md:text-2xl  text-white drop-shadow-xl lg:text-xl lg:text-start lg:pr-28 xl:pr-96">
               Descubre la perfecta combinación de elegancia y durabilidad con
               nuestras piezas de diseño. Transforma tu
               hogar con estilo.

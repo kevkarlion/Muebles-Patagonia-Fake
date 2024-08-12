@@ -26,12 +26,13 @@ export const BarNav = () => {
       {['md'].map((expand) => (
         <Navbar bg="dark" data-bs-theme="ligth"  fixed="top" key={expand} expand={expand} className= {`${styles['custom-navbar']} bg-body-tertiary h-20  drop-shadow-xl` }>
           <Container fluid>
-            <Navbar.Brand className={`ml-3  uppercase ${abrilFatface.className}`} href="#home">Muebles Patagonia</Navbar.Brand>
+            <Navbar.Brand className={`ml-3 uppercase ${abrilFatface.className}`} href="#">Muebles Patagonia</Navbar.Brand>
             <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-${expand}`} />
             <Navbar.Offcanvas
               id={`offcanvasNavbar-expand-${expand}`}
               aria-labelledby={`offcanvasNavbarLabel-expand-${expand}`}
               placement="end"
+              className='!w-[250px]'
             >
               <Offcanvas.Header closeButton>
                
