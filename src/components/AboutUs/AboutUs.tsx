@@ -17,7 +17,7 @@ export const AboutUs = () => {
                                     <h1 className={`${styles['title-section']} uppercase text-5xl max-w-max  font-semibold md:text-6xl md:whitespace-nowrap md:text-start`}>Sobre nosotros</h1>
                                     <div className='flex flex-col w-full '>
                                           <p className='mt-2 text-xl md:text-start md:w-96 mb-4'>Somos la marca número uno en muebles de diseño, donde estilo y exclusividad se encuentran.</p>
-                                          <Button variant="dark" className='self-center w-44 md:w-48 md:h-11  md:self-start md:mt-4 uppercase bg-yellow-400 hover:bg-yellow-500 border-3 text-black border-black' >contactanos</Button>{' '}
+                                          <Button variant="dark" className='self-center w-44 md:w-48 md:h-14  md:self-start md:mt-4 uppercase bg-yellow-400 hover:bg-yellow-500 border-3 text-black border-black' >contactanos</Button>{' '}
                                     </div>
                               </div>
                         </a>

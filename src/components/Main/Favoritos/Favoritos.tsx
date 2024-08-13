@@ -23,7 +23,7 @@ export const Favoritos = () => {
           </h1>
           <Button
                   variant="dark"
-                  className="w-56 bg-yellow-400 hover:bg-yellow-500 border-3 text-black border-black md:w-60 place-self-center  whitespace-nowrap  text-base uppercase font-normal md:mt-16"
+                  className="w-56 bg-yellow-400 hover:bg-yellow-500 border-3 text-black border-black h-14 md:w-60 place-self-center  whitespace-nowrap  text-base uppercase font-normal md:mt-16"
                   >
                   Nuestro Catalogo
                   </Button>{" "}

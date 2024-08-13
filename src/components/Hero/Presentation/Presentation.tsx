@@ -28,7 +28,7 @@ export const Presentation = () => {
               nuestras piezas de diseño. Transforma tu
               hogar con estilo.
             </h2>
-            <Button  className='text-black self-center hover:bg-amber-400 w-60 !h-14 mt-4 lg:self-start lg:ml-4  lg:h-11	uppercase border-black !border-2  bg-amber-300 relative ' >
+            <Button  className='text-black self-center hover:bg-amber-400 w-60 !h-14 mt-4 lg:self-start lg:ml-4  lg:h-11	uppercase border-black border-3  bg-amber-300 relative ' >
                <span className='flex justify-center items-center w-full'>
                 Ofertas Especiales
                 <Image 
