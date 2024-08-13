@@ -16,10 +16,18 @@ import Image from "next/image";
 export const Favoritos = () => {
   return (
     <div className= {`${styles['container-main'] } mb-16 md:px-12 `} id="design">
-      <Container className="flex flex-col w-full h-auto gap-20 ">
-        <h1 className={`flex justify-center text-center md:justify-start md:text-start text-4xl sm:text-6xl mt-16 uppercase ${abrilFatface.className}`}>
-          Diseños exclusivos
-        </h1>
+      <Container className="flex flex-col items-center w-full h-auto gap-20 ">
+        <div className="flex flex-col gap-4 md:flex-row items-end">
+          <h1 className={`flex justify-center text-center md:justify-start md:text-start text-4xl sm:text-6xl mt-16 uppercase ${abrilFatface.className}`}>
+            Diseños exclusivos
+          </h1>
+          <Button
+                  variant="dark"
+                  className="w-56 bg-yellow-400 hover:bg-yellow-500 border-3 text-black border-black md:w-60 place-self-center  whitespace-nowrap  text-base uppercase font-normal md:mt-16"
+                  >
+                  Nuestro Catalogo
+                  </Button>{" "}
+        </div>
         {/* Living */}
         <Row className="flex justify-center ">
           <Col sm={12} lg={6}>
