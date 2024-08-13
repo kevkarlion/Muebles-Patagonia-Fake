@@ -12,15 +12,13 @@ export const AboutUs = () => {
       return (
             <div className={` ${styles['container-main']} flex flex-col mt-10 justify-center items-center text-center px-5 md:gap-11 mb-8 md:mb-16` }  id='about-us'>
                   <div className='mb-14 w-full flex flex-col items-start mt-9 gap-4 md:flex-row '>
-                        <a href="">
-                              <div className='flex flex-col justify-center items-center md:items-start'>
-                                    <h1 className={`${styles['title-section']} uppercase text-5xl max-w-max  font-semibold md:text-6xl md:whitespace-nowrap md:text-start`}>Sobre nosotros</h1>
-                                    <div className='flex flex-col w-full '>
-                                          <p className='mt-2 text-xl md:text-start md:w-96 mb-4'>Somos la marca número uno en muebles de diseño, donde estilo y exclusividad se encuentran.</p>
-                                          <Button variant="dark" className='self-center w-44 md:w-48 md:h-14  md:self-start md:mt-4 uppercase bg-yellow-400 hover:bg-yellow-500 border-3 text-black border-black' >contactanos</Button>{' '}
-                                    </div>
+                        <div className='flex flex-col justify-center items-center md:items-start'>
+                              <h1 className={`${styles['title-section']} uppercase text-5xl max-w-max  font-semibold md:text-6xl md:whitespace-nowrap md:text-start`}>Sobre nosotros</h1>
+                              <div className='flex flex-col w-full '>
+                                    <p className='mt-2 text-xl md:text-start md:w-96 mb-4'>Somos la marca número uno en muebles de diseño, donde estilo y exclusividad se encuentran.</p>
+                                    <Button href='#form' variant="dark" className='flex items-center justify-center self-center bg-yellow-400 hover:bg-yellow-500 border-3 border-black text-black w-44 md:w-48 md:h-14  md:self-start md:mt-4 uppercase ' >contactanos</Button>{' '}
                               </div>
-                        </a>
+                        </div>
                   </div>
                   <div className='flex flex-col md:flex-row md:gap-5 ' > 
                         <h2 className={`${abrilFatface.className} self-center  text-2xl mb-2 md:w-1/4 md:text-2xl md:self-start`}>Nuestra historia</h2>  

@@ -1,21 +1,14 @@
-
-
 import { Roboto } from 'next/font/google'
 
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 
 import { BarNav } from "@/components/shared/BarNav"
-
-
-
+import { Footer } from '@/components/shared/Footer/Footer';
 
 
 import 'bootstrap/dist/css/bootstrap.min.css'
 import '../sass/globals.sass'
-
-
-
 
 
 const roboto = Roboto({
@@ -35,6 +28,7 @@ export default function RootLayout({ children ,}: Readonly <{ children: React.Re
       <body className={roboto.className}>
         <BarNav />
         {children}
+        <Footer />
       </body>
     </html>
   );
