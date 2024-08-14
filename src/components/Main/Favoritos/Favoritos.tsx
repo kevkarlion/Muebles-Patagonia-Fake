@@ -14,11 +14,11 @@ import Image from "next/image";
 
 export const Favoritos = () => {
   return (
-    <div className={`${styles["container-main"]} mb-16  `} id="design">
-      <Container className="flex flex-col  px-2 items-center w-full h-auto gap-20 ">
-        <div className="flex flex-col justify-center w-full gap-4 md:gap-16 md:flex-row items-center md:justify-start md:mb-10">
+    <div className={`${styles["container-main"]} mb-16 container `} id="design">
+      <Container className="flex flex-col  items-center w-full h-auto gap-20  ">
+        <div className="flex flex-col justify-center w-full  gap-4 md:gap-16 md:flex-row items-center md:!justify-start lg:whitespace-nowrap md:mb-10">
           <h1
-            className={`flex justify-center text-center w-60 sm:!w-auto md:!w-full lg:!w-[700px] md:justify-start md:text-start text-4xl sm:text-6xl mt-16 uppercase ${abrilFatface.className}`}
+            className={`flex justify-center text-center w-60 sm:!w-auto md:!w-full	md:self-start lg:!w-[700px] md:justify-start md:text-start text-4xl sm:text-6xl mt-16 uppercase lg: ${abrilFatface.className}`}
           >
             Diseños exclusivos
           </h1>
