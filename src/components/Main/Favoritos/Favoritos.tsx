@@ -15,7 +15,7 @@ import Image from "next/image";
 export const Favoritos = () => {
   return (
     <div className={`${styles["container-main"]} mb-16  `} id="design">
-      <Container className="flex flex-col  px-5 items-center w-full h-auto gap-20 ">
+      <Container className="flex flex-col  px-2 items-center w-full h-auto gap-20 ">
         <div className="flex flex-col justify-center w-full gap-4 md:gap-16 md:flex-row items-center md:justify-start md:mb-10">
           <h1
             className={`flex justify-center text-center w-60 sm:!w-auto md:!w-full lg:!w-[700px] md:justify-start md:text-start text-4xl sm:text-6xl mt-16 uppercase ${abrilFatface.className}`}
@@ -53,7 +53,7 @@ export const Favoritos = () => {
             >
               Living
             </h2>
-            <p className="text-center mb-4 font-normal	w-3/4	self-center">
+            <p className="text-center mb-4 font-normal	w-5/6	self-center">
               Transforma tu espacio con nuestra colección de muebles de diseño
               para living, donde cada pieza es una obra maestra de estilo y
               comodidad. Descubre sofás, mesas y accesorios creados para brindar
@@ -92,14 +92,11 @@ export const Favoritos = () => {
             >
               Comedor
             </h2>
-            <p className="text-center mb-4 font-normal	w-3/4	self-center">
+            <p className="text-center mb-4 font-normal	w-5/6	self-center">
               Crea un ambiente acogedor y sofisticado en tu hogar con nuestras
               soluciones de diseño para comedores. Cada pieza está diseñada para
               ofrecer tanto funcionalidad como estilo, proporcionando el
-              escenario perfecto para cenas familiares y reuniones sociales. Con
-              una combinación de materiales de alta calidad y un diseño
-              contemporáneo, nuestros comedores están pensados para realzar la
-              belleza de tu hogar mientras brindan comodidad y durabilidad.{" "}
+              escenario perfecto para cenas familiares y reuniones sociales.{" "}
             </p>
             <Button
               variant="dark"
@@ -130,14 +127,12 @@ export const Favoritos = () => {
             >
               Cocina
             </h2>
-            <p className="text-center mb-4 font-normal	w-3/4	self-center">
+            <p className="text-center mb-4 font-normal	w-5/6	self-center">
               Transforma tu cocina en el corazón del hogar con nuestras
               soluciones de diseño innovadoras. Cada pieza está meticulosamente
               diseñada para combinar estilo y funcionalidad, ofreciendo un
               espacio que no solo refleja tu buen gusto, sino que también
-              optimiza la experiencia culinaria. Nuestras cocinas están pensadas
-              para crear ambientes que inspiran creatividad y disfrute en cada
-              comida.
+              optimiza la experiencia culinaria.
             </p>
             <Button
               variant="dark"
@@ -172,13 +167,12 @@ export const Favoritos = () => {
             >
               Relax
             </h2>
-            <p className="text-center mb-4 font-normal	w-3/4	self-center">
+            <p className="text-center mb-4 font-normal	w-5/6	self-center">
               Redefine el concepto de diversión en casa con nuestras áreas de
               entretenimiento diseñadas para combinar estilo y confort.
               Perfectas para reuniones sociales, noches de película o momentos
               de relajación, nuestras soluciones crean espacios que invitan a
-              disfrutar y compartir. Encuentra la inspiración para transformar
-              tu hogar en el lugar ideal para el ocio y el disfrute.
+              disfrutar y compartir.
             </p>
             <Button
               variant="dark"
