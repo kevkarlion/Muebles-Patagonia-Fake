@@ -17,14 +17,18 @@ export const Presentation = () => {
         <div className="flex flex-col h-full px-3 items-center text-center justify-center  z-10">
           <div className="flex flex-col flex-1 w-full mb-14  items-center justify-center lg:items-start lg:w-3/4  lg:self-start  lg:pl-9 lg:mb-36 ">
             <motion.h1
+              initial={{
+                opacity: 0
+              }}
               animate={{
                 y: 80,
                 color: '#000',
+                opacity: 1
               }}
               transition={{
-                duration: 5,
+                duration: .5,
               }}
-              className={`${abrilFatface.className} mb-6 uppercase lg:w-[700px] xl:w-[800px] lg:text-6xl  text-5xl px-4 text-white drop-shadow-xl  mt-6 lg:text-start `}
+              className={`${abrilFatface.className} mb-[80px] uppercase lg:w-[700px] xl:w-[800px] lg:text-6xl  text-5xl px-4 text-white drop-shadow-xl  mt-6 lg:text-start `}
               >
               Muebles de Diseño Exclusivo para Cada Espacio
             </motion.h1>
