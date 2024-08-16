@@ -59,18 +59,38 @@ export const Presentation = () => {
                 Descubre la perfecta combinación de elegancia y durabilidad con
                 nuestras piezas de diseño. Transforma tu hogar con estilo.
               </motion.h2>
-              <Button className="text-black self-center hover:bg-amber-400 w-60 !h-14 mt-4 lg:self-start lg:ml-4  lg:h-11	uppercase border-black border-3  bg-amber-300 relative ">
-                <span className="flex justify-center items-center w-full">
-                  Ofertas Especiales
-                  <Image
-                    className="absolute right-[5px] bottom-[5px]"
-                    width={25}
-                    height={25}
-                    alt="icon-click"
-                    src={"/icons/click-hand.svg"}
-                  />
-                </span>
-              </Button>{" "}
+
+
+              <motion.div 
+                initial={{
+                  y: -25,
+                  opacity: 0,
+                }}
+                animate={{
+                  y: 5,
+                  color: "#000",
+                  opacity: 1,
+                }}
+                transition={{
+                  delay: .8,
+                  duration: .7,
+                  ease: easeOut,
+                }}
+              >
+                <Button className="text-black  self-center hover:bg-amber-400 w-60 !h-14 mt-4 lg:self-start lg:ml-4  lg:h-11	uppercase border-black border-3  bg-amber-300 relative ">
+                  <span className="flex justify-center items-center w-full">
+                    Ofertas Especiales
+                    <Image
+                      className="absolute right-[5px] bottom-[5px]"
+                      width={25}
+                      height={25}
+                      alt="icon-click"
+                      src={"/icons/click-hand.svg"}
+                    />
+                  </span>
+                </Button>{" "}
+
+              </motion.div>
             </div>
           </div>
         </div>

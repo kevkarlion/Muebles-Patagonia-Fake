@@ -34,9 +34,9 @@ export const Favoritos = () => {
           <Col sm={12} lg={5}>
             <Image
               className="rounded-lg"
-              src="/images-main/living.jpg"
-              width={1080}
-              height={920}
+              src="/images-main/living.webp"
+              width={700}
+              height={400}
               sizes="(max-width: 768px) 100vw, 33vw"
               alt="image-cocina"
               style={{ objectFit: "cover", position: "static" }}
@@ -73,9 +73,9 @@ export const Favoritos = () => {
           <Col sm={12} lg={5} className="flex justify-center lg:order-2">
             <Image
               className="rounded-lg"
-              src="/images-main/comedor.jpg"
+              src="/images-main/comedor.webp"
               width={300}
-              height={600}
+              height={700}
               sizes="(max-width: 768px) 100vw, 33vw"
               alt="image-cocina"
               style={{ objectFit: "contain", position: "static" }}
@@ -112,9 +112,9 @@ export const Favoritos = () => {
           <Col sm={12} lg={5}>
             <Image
               className="rounded-lg"
-              src="/images-main/cocina.jpg"
-              width={1080}
-              height={920}
+              src="/images-main/cocina.webp"
+              width={700}
+              height={400}
               sizes="(max-width: 768px) 100vw, 33vw"
               alt="image-cocina"
               style={{ objectFit: "cover", position: "static" }}
@@ -143,14 +143,14 @@ export const Favoritos = () => {
           </Col>
         </Row>
 
-        {/* Relajación */}
+        {/* Relax */}
         <Row className="flex flex-col justify-center items-center lg:flex-row">
           <Col sm={12} lg={5} className="flex justify-center lg:order-last">
             <Image
               className="rounded-lg"
-              src="/images-main/ocio.jpg"
+              src="/images-main/ocio.webp"
               width={300}
-              height={600}
+              height={700}
               sizes="(max-width: 768px) 100vw, 33vw"
               alt="image-cocina"
               style={{ objectFit: "contain", position: "static" }}
