@@ -16,18 +16,32 @@ export const Favoritos = () => {
   return (
     <div className={`${styles["container-main"]} mb-16 container `} id="design">
       <Container className="flex flex-col  items-center w-full h-auto gap-20  ">
-        <div className="flex flex-col justify-center w-full  gap-4 md:gap-16 md:flex-row items-center md:!justify-start lg:whitespace-nowrap md:mb-10">
+        <div className="flex flex-col justify-center w-full gap-4 md:!gap-12 md:px-4 md:flex-row items-center md:!justify-center xl:whitespace-nowrap md:items-center md:mb-14 md:mt-14 xl:!justify-center  2xl:!justify-center">
           <h1
-            className={`flex justify-center text-center w-60 sm:!w-auto md:!w-full	md:self-start lg:!w-[700px] md:justify-start md:text-start text-4xl sm:text-6xl mt-16 uppercase lg: ${abrilFatface.className}`}
+            className={`flex justify-center text-5xl text-center w-60 sm:!w-auto md:!w-full  lg:!w-[800px] md:justify-start md:text-start  sm:text-7xl md:!text-7xl xl:!text-7xl  mt-16 md:m-0 uppercase md:self-center 2xl:mr-48 ${abrilFatface.className}`}
           >
             Diseños exclusivos
           </h1>
-          <Button
-                  variant="dark"
-                  className="w-56 bg-yellow-400 hover:bg-yellow-500 border-3 text-black border-black h-11 md:h-14 md:w-60 place-self-center  whitespace-nowrap  text-base uppercase font-normal md:mt-16"
-                  >
-                  Nuestro Catalogo
-                  </Button>{" "}
+          <div className=" flex flex-col items-center md:mt-5 ">
+            <p className="text-xl md:text-2xl font-light text-center ">Conocé todo lo que <br /> <span className="font-bold">tenemos para vos!</span> </p>
+            <Image 
+              
+              src="/icons/arrow-down.svg"
+              width={30}
+              height={30}
+              sizes="(max-width: 768px) 100vw, 33vw"
+              alt="flecha"
+              style={{ objectFit: "cover", position: "static" }}
+              priority
+
+            />
+            <Button
+              variant="dark"
+              className="w-56 bg-yellow-400 hover:bg-yellow-500 border-1 text-black border-black h-11 md:h-14 md:w-60 place-self-center  whitespace-nowrap  text-base uppercase font-normal md:mt-4"
+            >
+              Nuestro Catalogo
+            </Button>{" "}
+          </div>
         </div>
         {/* Living */}
         <Row className="flex justify-center ">

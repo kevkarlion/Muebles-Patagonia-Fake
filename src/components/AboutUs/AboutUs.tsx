@@ -13,10 +13,10 @@ export const AboutUs = () => {
             <div className={` ${styles['container-main']} flex flex-col mt-10 justify-center items-center text-center px-10 md:gap-11 mb-8 md:mb-16 container` }  id='about-us'>
                   <div className='mb-14 w-full flex flex-col items-start mt-9 gap-4 md:flex-row '>
                         <div className='flex flex-col justify-center items-center md:items-start'>
-                              <h1 className={`${styles['title-section']} uppercase text-4xl max-w-max font-semibold sm:text-6xl md:whitespace-nowrap md:text-start mb-2`}>Sobre nosotros</h1>
+                              <h1 className={`${styles['title-section']} uppercase text-5xl max-w-max font-semibold sm:text-6xl md:whitespace-nowrap md:text-start mb-2`}>Sobre nosotros</h1>
                               <div className='flex flex-col w-full '>
                                     <p className='mt-2 text-xl md:text-start md:w-96 mb-4 font-light'>Somos la marca número uno en muebles de diseño, donde estilo y exclusividad se encuentran.</p>
-                                    <Button href='#form' variant="dark" className='flex items-center justify-center self-center bg-yellow-400 hover:bg-yellow-500 border-3 border-black text-black w-44 md:w-48 md:h-14  md:self-start md:mt-4 uppercase ' >contactanos</Button>{' '}
+                                    <Button href='#form' variant="dark" className='flex items-center justify-center self-center bg-yellow-400 hover:bg-yellow-500 border-1 border-black text-black w-44 md:w-48 md:h-14  md:self-start md:mt-4 uppercase ' >contactanos</Button>{' '}
                               </div>
                         </div>
                   </div>
