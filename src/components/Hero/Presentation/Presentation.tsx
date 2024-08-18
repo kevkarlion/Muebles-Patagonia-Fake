@@ -2,6 +2,7 @@
 import Button from "react-bootstrap/Button";
 import Image from "next/image";
 
+import Link from "next/link";
 import { easeInOut, easeOut, motion } from "framer-motion";
 import { Abril_Fatface } from "next/font/google";
 import styles from "./Presentation.module.sass";
@@ -79,18 +80,21 @@ export const Presentation = () => {
                   ease: easeOut,
                 }}
               >
-                <Button className="will-change-transform text-black self-center hover:bg-amber-400 w-60 !h-14 lg:self-start lg:ml-6 lg:h-11	uppercase border-black border-3 bg-amber-300 relative ">
-                  <span className="flex justify-center items-center w-full">
-                    Ofertas Especiales
-                    <Image
-                      className="absolute right-[5px] bottom-[5px]"
-                      width={25}
-                      height={25}
-                      alt="icon-click"
-                      src={"/icons/click-hand.svg"}
-                    />
-                  </span>
-                </Button>{" "}
+
+                <Link href='/catalogo/ofertas'>
+                  <Button className="will-change-transform text-black self-center hover:bg-amber-400 w-60 !h-14 lg:self-start lg:ml-6 lg:h-11	uppercase border-black border-3 bg-amber-300 relative ">
+                    <span className="flex justify-center items-center w-full">
+                      Ofertas Especiales
+                      <Image
+                        className="absolute right-[5px] bottom-[5px]"
+                        width={25}
+                        height={25}
+                        alt="icon-click"
+                        src={"/icons/click-hand.svg"}
+                      />
+                    </span>
+                  </Button>{" "}
+                </Link>
 
               </motion.div>
             </div>
