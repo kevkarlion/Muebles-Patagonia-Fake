@@ -67,7 +67,7 @@ export const Favoritos = () => {
             >
               Living
             </h2>
-            <p className="text-center mb-4 font-normal	w-5/6	self-center">
+            <p className="text-start mb-4 font-light	w-5/6	self-center">
               Transforma tu espacio con nuestra colección de muebles de diseño
               para living, donde cada pieza es una obra maestra de estilo y
               comodidad. Descubre sofás, mesas y accesorios creados para brindar
@@ -106,7 +106,7 @@ export const Favoritos = () => {
             >
               Comedor
             </h2>
-            <p className="text-center mb-4 font-normal	w-5/6	self-center">
+            <p className="text-start mb-4 font-light	w-5/6	self-center">
               Crea un ambiente acogedor y sofisticado en tu hogar con nuestras
               soluciones de diseño para comedores. Cada pieza está diseñada para
               ofrecer tanto funcionalidad como estilo, proporcionando el
@@ -141,7 +141,7 @@ export const Favoritos = () => {
             >
               Cocina
             </h2>
-            <p className="text-center mb-4 font-normal	w-5/6	self-center">
+            <p className="text-start mb-4 font-light	w-5/6	self-center">
               Transforma tu cocina en el corazón del hogar con nuestras
               soluciones de diseño innovadoras. Cada pieza está meticulosamente
               diseñada para combinar estilo y funcionalidad, ofreciendo un
@@ -181,7 +181,7 @@ export const Favoritos = () => {
             >
               Relax
             </h2>
-            <p className="text-center mb-4 font-normal	w-5/6	self-center">
+            <p className="text-start mb-4 font-light	w-5/6	self-center">
               Redefine el concepto de diversión en casa con nuestras áreas de
               entretenimiento diseñadas para combinar estilo y confort.
               Perfectas para reuniones sociales, noches de película o momentos
