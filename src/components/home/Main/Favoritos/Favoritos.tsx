@@ -48,7 +48,7 @@ export const Favoritos = () => {
           <Col sm={12} lg={6}>
             <Image
               className="rounded-lg"
-              src="/images-main/living.webp"
+              src="/images-main/living-1200.webp"
               width={700}
               height={400}
               sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
@@ -87,13 +87,12 @@ export const Favoritos = () => {
           <Col sm={12} lg={5} className="flex justify-center lg:order-2">
             <Image
               className="rounded-lg"
-              src="/images-main/comedor.webp"
+              src="/images-main/comedor-1200.webp"
               width={300}
               height={700}
-              sizes="(max-width: 768px) 100vw, 33vw"
+              sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
               alt="image-cocina"
               style={{ objectFit: "contain", position: "static" }}
-              
               loading="lazy"
             />
           </Col>
@@ -127,10 +126,10 @@ export const Favoritos = () => {
           <Col sm={12} lg={5}>
             <Image
               className="rounded-lg"
-              src="/images-main/cocina.webp"
+              src="/images-main/cocina-1200.webp"
               width={700}
               height={400}
-              sizes="(max-width: 768px) 100vw, 33vw"
+              sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
               alt="image-cocina"
               style={{ objectFit: "cover", position: "static" }}
               
@@ -164,13 +163,12 @@ export const Favoritos = () => {
           <Col sm={12} lg={5} className="flex justify-center lg:order-last">
             <Image
               className="rounded-lg"
-              src="/images-main/ocio.webp"
+              src="/images-main/relax-1200.webp"
               width={300}
               height={700}
-              sizes="(max-width: 768px) 100vw, 33vw"
-              alt="image-cocina"
+              sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
+              alt="image-relax"
               style={{ objectFit: "contain", position: "static" }}
-              
               loading="lazy"
             />
           </Col>
