@@ -95,7 +95,7 @@ export const Formulario = () => {
             className="rounded-md "
             width={300}
             height={700}
-            sizes="(max-width: 768px) 100vw, (max-width: 1024px) 5vw, 33vw"
+            sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
             alt="imagen-mueble-de-diseño"
             src={"/img-form/img-form-700.webp"}
             loading='lazy'
