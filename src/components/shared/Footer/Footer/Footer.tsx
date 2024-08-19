@@ -7,12 +7,12 @@ import styles from './Footer.module.sass'
 export const Footer = () => {
   return (
     
-      <footer className={`text-white py-4 mt-auto ${styles['container-footer']}`}>
+      <footer className={`text-white py-4 mt-auto md:h-[480px] ${styles['container-footer']}`} id="redes">
         <div className="container mt-12 sm:px-8 ">
           <div className="flex flex-col gap-3 sm:flex-row sm:justify-between lg:mx-40">
             <div className="flex flex-col justify-start items-center mb-3 md:!mb-0">
               <h5 className="text-xl border-b-[1px] pb-1">Visita nuestras redes</h5>
-              <ul className="flex flex-col gap-3 mt-6 ml-4 font-light">
+              <ul className="flex flex-col gap-3 mt-6  font-light">
                 <li className="flex gap-4 ">
                   <Image 
                         width={30}

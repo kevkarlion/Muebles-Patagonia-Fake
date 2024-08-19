@@ -24,43 +24,28 @@ export const BarNav = () => {
   return (
     <>
       {['md'].map((expand) => (
-        <Navbar bg="dark" data-bs-theme="ligth"  fixed="top" key={expand} expand={expand} className= {`${styles['custom-navbar']} bg-body-tertiary h-20  ` } >
+        <Navbar bg="dark" data-bs-theme="ligth"  fixed="top" key={expand} expand={expand} className= {`${styles['custom-navbar']} bg-body-tertiary h-20  drop-shadow-xl` }>
           <Container fluid>
-            <Navbar.Brand className={`ml-3  uppercase ${abrilFatface.className}`} href="#home">Muebles Patagonia</Navbar.Brand>
+            <Navbar.Brand className={`ml-3 uppercase ${abrilFatface.className}`} href="#">Muebles Patagonia</Navbar.Brand>
             <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-${expand}`} />
             <Navbar.Offcanvas
               id={`offcanvasNavbar-expand-${expand}`}
               aria-labelledby={`offcanvasNavbarLabel-expand-${expand}`}
               placement="end"
+              className='!w-[250px]'
             >
               <Offcanvas.Header closeButton>
                
               </Offcanvas.Header>
               <Offcanvas.Body>
                 <Nav className="justify-content-end flex-grow-1 pe-3">
-                  <Nav.Link href="#home">HOME</Nav.Link>
+
+                  <Nav.Link href="/">HOME</Nav.Link>
                   
-                  <NavDropdown
-                    title="PRODUCTOS"
-                    id={`offcanvasNavbarDropdown-expand-${expand}`}
-                  >
-                    <NavDropdown.Item href="#action3">Comedor</NavDropdown.Item>
-                    <NavDropdown.Item href="#design">
-                      Exclusivos
-                    </NavDropdown.Item>
-                    <NavDropdown.Item href="#action4">
-                      Sillones
-                    </NavDropdown.Item>
-                    <NavDropdown.Item href="#action4">
-                      Cocina
-                    </NavDropdown.Item>
-                    <NavDropdown.Divider />
-                    <NavDropdown.Item href="#action5">
-                      Something else here
-                    </NavDropdown.Item>
-                  </NavDropdown>
                   <Nav.Link href="#about-us">NOSOTROS</Nav.Link>
+                  <Nav.Link href="#design">DISEÑOS</Nav.Link>
                   <Nav.Link href="#form">CONTACTO</Nav.Link>
+                  <Nav.Link href="#redes">REDES</Nav.Link>
                 </Nav>
              
               </Offcanvas.Body>
