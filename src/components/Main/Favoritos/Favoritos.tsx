@@ -12,6 +12,9 @@ const abrilFatface = Abril_Fatface({
 
 import Image from "next/image";
 
+const PLACEHOLDERIMAGE = 'data:image/webp;base64,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'
+
+
 export const Favoritos = () => {
   return (
     <div className={`${styles["container-main"]} mb-16 md:px-12 `} id="design">
@@ -32,16 +35,20 @@ export const Favoritos = () => {
         {/* Living */}
         <Row className="flex justify-center ">
           <Col sm={12} lg={5}>
-            <Image
-              className="rounded-lg"
-              src="/images-main/living.jpg"
-              width={1080}
-              height={920}
-              sizes="(max-width: 768px) 100vw, 33vw"
-              alt="image-cocina"
-              style={{ objectFit: "cover", position: "static" }}
-              priority
-            />
+         
+          <Image
+            className="rounded-lg"
+            src="/images-main/living.jpg"
+            alt="image-cocina"
+            width={700}
+            height={400}
+            sizes="(max-width:600px) 100vw, (max-width: 1200px) 50vw, 33vw"
+            layout="responsive"
+            priority
+            placeholder="blur"
+            blurDataURL={PLACEHOLDERIMAGE}
+          />
+         
           </Col>
           <Col
             sm={12}
