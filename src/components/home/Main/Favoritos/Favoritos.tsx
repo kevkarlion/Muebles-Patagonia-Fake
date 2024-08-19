@@ -32,8 +32,8 @@ export const Favoritos = () => {
               sizes="(max-width: 768px) 100vw, 33vw"
               alt="flecha"
               style={{ objectFit: "cover", position: "static" }}
-              priority
-
+            
+             
             />
             <Button
               variant="dark"
@@ -45,16 +45,16 @@ export const Favoritos = () => {
         </div>
         {/* Living */}
         <Row className="flex justify-center ">
-          <Col sm={12} lg={5}>
+          <Col sm={12} lg={6}>
             <Image
               className="rounded-lg"
               src="/images-main/living.webp"
               width={700}
               height={400}
-              sizes="(max-width: 768px) 100vw, 33vw"
+              sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
               alt="image-cocina"
-              style={{ objectFit: "cover", position: "static" }}
-              priority
+              style={{ objectFit: "cover" }}
+              loading="lazy"
             />
           </Col>
           <Col
@@ -93,7 +93,8 @@ export const Favoritos = () => {
               sizes="(max-width: 768px) 100vw, 33vw"
               alt="image-cocina"
               style={{ objectFit: "contain", position: "static" }}
-              priority
+              
+              loading="lazy"
             />
           </Col>
           <Col
@@ -132,7 +133,8 @@ export const Favoritos = () => {
               sizes="(max-width: 768px) 100vw, 33vw"
               alt="image-cocina"
               style={{ objectFit: "cover", position: "static" }}
-              priority
+              
+              loading="lazy"
             />
           </Col>
           <Col sm={12} lg={5} className="flex flex-col justify-center">
@@ -168,7 +170,8 @@ export const Favoritos = () => {
               sizes="(max-width: 768px) 100vw, 33vw"
               alt="image-cocina"
               style={{ objectFit: "contain", position: "static" }}
-              priority
+              
+              loading="lazy"
             />
           </Col>
           <Col

@@ -2,16 +2,23 @@
 import Button from "react-bootstrap/Button";
 import Image from "next/image";
 
+import Link from "next/link";
 import { easeInOut, easeOut, motion } from "framer-motion";
 import { Abril_Fatface } from "next/font/google";
-import styles from "./Presentation.module.sass";
+import styles from "./Hero.module.sass";
 
 const abrilFatface = Abril_Fatface({
   weight: ["400"],
   subsets: ["latin"],
 });
 
-export const Presentation = () => {
+
+
+
+export const Hero = () => {
+
+
+
   return (
     <div className="w-full flex pt-20 h-[700px] mb-1" id="home">
       <div className={` ${styles["bg-hero"]} relative w-full h-auto`}>
@@ -56,38 +63,43 @@ export const Presentation = () => {
               nuestras piezas de diseño. Transforma tu hogar con estilo.
             </motion.h2>
 
-            <motion.div
-              initial={{
-                y: 0,
-                opacity: 0,
-              }}
-              animate={{
-                y: 10,
-                color: "#000",
-                opacity: 1,
-              }}
-              transition={{
-                delay: 0.8,
-                duration: 0.7,
-                ease: easeOut,
-              }}
-            >
-              <Button className="will-change-transform text-black self-center hover:bg-amber-400 w-60 !h-14 lg:self-start lg:ml-6 lg:h-11	uppercase border-black border-3 bg-amber-300 relative ">
-                <span className="flex justify-center items-center w-full">
-                  Ofertas Especiales
-                  <Image
-                    className="absolute right-[5px] bottom-[5px]"
-                    width={25}
-                    height={25}
-                    alt="icon-click"
-                    src={"/icons/click-hand.svg"}
-                  />
-                </span>
-              </Button>{" "}
-            </motion.div>
+
+              <motion.div 
+                initial={{
+                  y: 0,
+                  opacity: 0,
+                }}
+                animate={{
+                  y: 10,
+                  color: "#000",
+                  opacity: 1,
+                }}
+                transition={{
+                  delay: .8,
+                  duration: .7,
+                  ease: easeOut,
+                }}
+              >
+
+                <Link href='/catalogo/ofertas'>
+                  <Button className="will-change-transform text-black self-center hover:bg-amber-400 w-60 !h-14 lg:self-start lg:ml-6 lg:h-11	uppercase border-black border-3 bg-amber-300 relative ">
+                    <span className="flex justify-center items-center w-full">
+                      Ofertas Especiales
+                      <Image
+                        className="absolute right-[5px] bottom-[5px]"
+                        width={25}
+                        height={25}
+                        alt="icon-click"
+                        src={"/icons/click-hand.svg"}
+                      />
+                    </span>
+                  </Button>{" "}
+                </Link>
+
+              </motion.div>
+            </div>
           </div>
         </div>
       </div>
-    </div>
   );
 };
