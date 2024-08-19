@@ -1,4 +1,4 @@
-import { color } from "framer-motion";
+
 import Image from "next/image";
 
 import styles from './Footer.module.sass'
@@ -7,10 +7,14 @@ import styles from './Footer.module.sass'
 export const Footer = () => {
   return (
     
-      <footer className={`text-white py-4 mt-auto md:h-[480px] ${styles['container-footer']}`} id="redes">
-        <div className="container mt-12 sm:px-8 ">
-          <div className="flex flex-col gap-3 sm:flex-row sm:justify-between lg:mx-40">
-            <div className="flex flex-col justify-start items-center mb-3 md:!mb-0">
+      <footer className={` text-white py-4 sm:h-[480px] ${styles['container-footer']}`} id='redes'>
+        <div className="flex flex-col    items-center h-full  flex-1 justify-end  sm:px-8 ">
+
+          {/* contenedor redes y contacto */}
+          <div className="flex flex-col mb-12 mt-8 flex-1 h-full items-center justify-center  gap-3 sm:mb-32 sm:flex-row sm:w-full sm:justify-evenly lg:mx-40 sm:items-end">
+
+            {/* contenedor redes */}
+            <div className="flex flex-col justify-start items-center  md:!mb-0">
               <h5 className="text-xl border-b-[1px] pb-1">Visita nuestras redes</h5>
               <ul className="flex flex-col gap-3 mt-6  font-light">
                 <li className="flex gap-4 ">
@@ -48,6 +52,8 @@ export const Footer = () => {
                 </li>
               </ul>
             </div>
+
+            {/* contenedor contacto */}
             <div className="col-md-4 flex flex-col items-center justify-center">
               <h5 className="text-xl text-center  border-b-[1px] pb-1">Contacto</h5>
               <address className="flex flex-col gap-3 mt-6 ml-4 text-center">
@@ -93,8 +99,8 @@ export const Footer = () => {
               </address>
             </div>
           </div>
-          <div className="row mt-16">
-            <div className="col text-center font-light">
+          <div className="row">
+            <div className="col text-center font-light ">
               <p className="mb-0 text-sm">
                 &copy; 2024 MUEBLES PATAGONIA. Todos los derechos reservados.
               </p>
