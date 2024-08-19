@@ -1,6 +1,6 @@
-import { Hero } from "@/components/Hero"
-import { Main } from "@/components/Main"
-import { AboutUs } from "@/components/AboutUs"
+import { Hero } from "@/components/home/Hero"
+import { Main } from "@/components/home/Main"
+import { AboutUs } from "@/components/home/AboutUs"
 
 export default function Home () {
   return (

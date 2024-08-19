@@ -5,7 +5,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { easeInOut, easeOut, motion } from "framer-motion";
 import { Abril_Fatface } from "next/font/google";
-import styles from "./Presentation.module.sass";
+import styles from "./Hero.module.sass";
 
 const abrilFatface = Abril_Fatface({
   weight: ["400"],
@@ -15,7 +15,7 @@ const abrilFatface = Abril_Fatface({
 
 
 
-export const Presentation = () => {
+export const Hero = () => {
 
 
 

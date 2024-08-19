@@ -2,21 +2,22 @@
 //Aplico interface para manejo de ts
 interface CategoryProps {
       params: {
-            category: string
+            categories: string[],
+            searchParams?: string[]
       }
 }
 
 const Category = (props: CategoryProps) => {
 
-
+      console.log(props);
+      
       //destructuracion
-      const { category } = props.params
-
-      console.log(category);
+      const { categories } = props.params
+      
       
       return (
             <div>
-                  <h1 className="mt-40">categoria dinamica</h1>
+                  <h1 className="mt-40">categoria dinamica: {categories}</h1>
             </div>
       );
 }

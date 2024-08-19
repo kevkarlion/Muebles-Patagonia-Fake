@@ -10,8 +10,6 @@ import Link from 'next/link';
 import { Abril_Fatface } from 'next/font/google'
 
 
-
-
 const abrilFatface = Abril_Fatface ({
   weight: ['400'],
   subsets: ['latin']
@@ -42,13 +40,12 @@ export const BarNav = () => {
               <Offcanvas.Body>
                 <Nav className="justify-content-end flex-grow-1 pe-3">
 
+                  <Nav.Link href="/">HOME</Nav.Link>
                   
-                  <Link href="/">HOME</Link>
-                  <Link href="#about-us">NOSOTROS</Link>
-                  <Link href="#design">DISEÑOS</Link>
-                  <Link href="#form">CONTACTO</Link>
-                  <Link href="#redes">REDES</Link>
-                  
+                  <Nav.Link href="#about-us">NOSOTROS</Nav.Link>
+                  <Nav.Link href="#design">DISEÑOS</Nav.Link>
+                  <Nav.Link href="#form">CONTACTO</Nav.Link>
+                  <Nav.Link href="#redes">REDES</Nav.Link>
                 </Nav>
              
               </Offcanvas.Body>
