@@ -3,6 +3,7 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Button from "react-bootstrap/Button";
 import styles from "./Favoritos.module.sass";
+import Link from "next/link";
 import { Abril_Fatface } from "next/font/google";
 
 const abrilFatface = Abril_Fatface({
@@ -35,9 +36,11 @@ export const Favoritos = () => {
             
              
             />
+         
             <Button
               variant="dark"
-              className="w-56 bg-yellow-400 hover:bg-yellow-500 border-1 text-black border-black h-11 md:h-14 md:w-60 place-self-center  whitespace-nowrap  text-base uppercase font-normal md:mt-4"
+              href="/catalogo"
+              className="flex items-center justify-center w-56 bg-yellow-400 hover:bg-yellow-500 border-1  text-black border-black h-11 md:h-14 md:w-60  whitespace-nowrap  text-base uppercase font-normal md:mt-4"
             >
               Nuestro Catalogo
             </Button>{" "}

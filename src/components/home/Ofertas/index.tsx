@@ -1,0 +1,1 @@
+export { Ofertas } from './Ofertas'

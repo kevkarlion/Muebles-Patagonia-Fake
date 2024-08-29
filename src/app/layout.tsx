@@ -26,8 +26,8 @@ export default function RootLayout({ children ,}: Readonly <{ children: React.Re
 
 
   return (
-    <html lang="en">
-      <body className={roboto.className}>
+    <html className='h-full w-full' lang="en">
+      <body className={`${roboto.className} h-auto w-full`}>
         <BarNav />
         {children}
         <Footer />
