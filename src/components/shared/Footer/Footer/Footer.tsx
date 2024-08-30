@@ -6,7 +6,7 @@ export const Footer = () => {
   return (
     <footer
       className={` text-white py-4 sm:h-[480px] ${styles["container-footer"]}`}
-      id="redes"
+      id=" redes"
     >
       <div className="flex flex-col    items-center h-full  flex-1 justify-end  sm:px-8 ">
         {/* contenedor redes y contacto */}

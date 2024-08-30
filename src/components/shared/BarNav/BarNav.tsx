@@ -8,6 +8,7 @@ import Navbar from "react-bootstrap/Navbar";
 import NavDropdown from "react-bootstrap/NavDropdown";
 import Offcanvas from "react-bootstrap/Offcanvas";
 import Link from "next/link";
+
 import { Abril_Fatface } from "next/font/google";
 import styles from "./BarNav.module.sass";
 
@@ -23,28 +24,13 @@ const abrilFatface = Abril_Fatface({
 
 // Componente de Barra de Navegación
 export const BarNav = () => {
-  const pathname = usePathname();
-  const router = useRouter();
-  const HandleNavClick = (id: string) => {
-    if (pathname === "/") {
-      console.log("pathname is", pathname);
-      console.log("id is", id);
-      // Desplazamiento suave si estamos en la página principal
-      const element = document.getElementById(id);
-      console.log("el element is", element);
-      if (element) {
-       
-        element.scrollIntoView({ behavior: 'smooth' });
-      } else {
-        console.warn(`Elemento con id "${id}" no encontrado.`);
-      }
-    } else {
-      console.log("pathname is", pathname);
-      console.log("id is", id);
-      // Redirigir a la página principal y luego desplazar
-      router.push(`/#${id}`);
-    }
-  };
+  
+
+  // const HandleNavClick = (id: string) => {
+    
+  //   console.log('id es', id),
+  //   <Link href='/#redes' scroll={false}></Link>
+  // };
 
   return (
     <>
@@ -75,37 +61,38 @@ export const BarNav = () => {
               <Offcanvas.Body>
                 <Nav className="justify-content-end flex-grow-1 pe-3">
                   <Nav.Link
-                    onClick={() => HandleNavClick("home")}
+                    // onClick={() => HandleNavClick("home")}
                     id="home"
-                    
+                    href="#"
                   >
                     HOME
                   </Nav.Link>
                   <Nav.Link
-                    onClick={() => HandleNavClick("design")}
+                    // onClick={() => HandleNavClick("design")}
                     id="design"
-                    
+                    href="#design"
                   >
                     DISEÑOS
                   </Nav.Link>
                   <Nav.Link
-                    onClick={() => HandleNavClick("about-us")}
+                    // onClick={() => HandleNavClick("about-us")}
                     id="about-us"
-                 
+                    href="#about-us"
                   >
                     NOSOTROS
                   </Nav.Link>
                   <Nav.Link
-                    onClick={() => HandleNavClick("form")}
+                    // onClick={() => HandleNavClick("form")}
                     id="form"
+                    href="#form"
                     
                   >
                     CONTACTO
                   </Nav.Link>
                   <Nav.Link
-                    onClick={() => HandleNavClick("redes")}
+                    // onClick={() => HandleNavClick("redes")}
                     id="redes"
-                    
+                    href="#redes"
                   >
                     REDES
                   </Nav.Link>
