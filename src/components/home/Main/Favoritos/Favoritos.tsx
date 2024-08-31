@@ -13,7 +13,7 @@ export const Favoritos = () => {
       <Container className="flex flex-col  items-center w-full h-auto gap-20  ">
         <div className="flex flex-col justify-center w-full gap-4 md:!gap-12 md:px-4 md:flex-row items-center md:!justify-center xl:whitespace-nowrap md:items-center md:mb-14 md:mt-14 xl:!justify-center  2xl:!justify-center">
           <h1
-            className={` font-abril flex justify-center text-5xl text-center w-60 sm:!w-auto md:!w-full  lg:!w-[800px] md:justify-start md:text-start  sm:text-7xl md:!text-7xl xl:!text-7xl  mt-16 md:m-0 uppercase md:self-center 2xl:mr-48 `}
+            className={` font-abril font-bold flex justify-center text-5xl text-center w-60 sm:!w-auto md:!w-full  lg:!w-[800px] md:justify-start md:text-start  sm:text-7xl md:!text-7xl xl:!text-7xl  mt-16 md:m-0 uppercase md:self-center 2xl:mr-48 `}
           >
             Diseños exclusivos
           </h1>

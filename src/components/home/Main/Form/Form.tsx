@@ -19,7 +19,7 @@ export const Formulario = () => {
       <div
         className={`flex flex-col justify-center items-center text-center gap-3 mb-6 pt-11 `}
       >
-        <h1 className={`font-abril text-4xl sm:text-6xl`}>
+        <h1 className={`font-abril font-bold text-4xl sm:text-6xl`}>
           Escríbenos
         </h1>
         <h2 className="text-xl font-light ">
