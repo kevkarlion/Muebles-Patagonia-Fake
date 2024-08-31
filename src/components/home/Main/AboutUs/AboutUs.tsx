@@ -1,11 +1,7 @@
 import Button from "react-bootstrap/Button";
-import { Abril_Fatface } from "next/font/google";
+
 import styles from "./AboutUs.module.sass";
 
-const abrilFatface = Abril_Fatface({
-  weight: ["400"],
-  subsets: ["latin"],
-});
 
 export const AboutUs = () => {
   return (
@@ -16,7 +12,7 @@ export const AboutUs = () => {
       <div className="mb-14 w-full flex flex-col items-start mt-9 gap-4 md:flex-row ">
         <div className="flex flex-col justify-center items-center md:items-start">
           <h1
-            className={`${styles["title-section"]} uppercase text-5xl max-w-max font-semibold sm:text-6xl md:whitespace-nowrap md:text-start mb-2 `}
+            className={`font-abril uppercase text-5xl max-w-max font-semibold sm:text-6xl md:whitespace-nowrap md:text-start mb-2 `}
           >
             Sobre nosotros
           </h1>
@@ -37,7 +33,7 @@ export const AboutUs = () => {
       </div>
       <div className="flex flex-col md:flex-row md:gap-5 ">
         <h2
-          className={`${abrilFatface.className} self-center font-bold text-2xl mb-2 md:w-1/4 md:text-2xl md:self-start`}
+          className={`font-abril self-center font-bold text-2xl mb-2 md:w-1/4 md:text-2xl md:self-start`}
         >
           Nuestra historia
         </h2>
@@ -56,7 +52,7 @@ export const AboutUs = () => {
       </div>
       <div className="flex flex-col md:flex-row md:gap-5 ">
         <h2
-          className={`${abrilFatface.className} font-bold self-center  text-2xl mb-2 md:w-1/4 md:text-2xl md:self-start`}
+          className={`font-abril font-bold self-center  text-2xl mb-2 md:w-1/4 md:text-2xl md:self-start`}
         >
           Misión
         </h2>
