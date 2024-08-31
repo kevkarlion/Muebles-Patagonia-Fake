@@ -9,7 +9,7 @@ import Image from "next/image";
 
 export const Favoritos = () => {
   return (
-    <div className={`${styles["container-main"]} mb-16 container `} id="design">
+    <div className={`${styles["container-main"]} scroll-mt-[70px] mb-16 container `} id="design">
       <Container className="flex flex-col  items-center w-full h-auto gap-20  ">
         <div className="flex flex-col justify-center w-full gap-4 md:!gap-12 md:px-4 md:flex-row items-center md:!justify-center xl:whitespace-nowrap md:items-center md:mb-14 md:mt-14 xl:!justify-center  2xl:!justify-center">
           <h1

@@ -22,6 +22,7 @@ export default function Category(props: CategoryProps) {
     setStateIsReady(true)
   }, [path])
 
+  
   if(!stateMainIsReady) return <Loading />
 
   

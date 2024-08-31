@@ -10,7 +10,7 @@ const abrilFatface = Abril_Fatface({
 export const AboutUs = () => {
   return (
     <div
-      className={` ${styles["container-main"]} flex flex-col pt-10 justify-center items-center text-center px-10 md:gap-11 mb-8 md:mb-16 container`}
+      className={` ${styles["container-main"]} scroll-mt-[80px] flex flex-col pt-10 justify-center items-center text-center px-10 md:gap-11 mb-8 md:mb-16 container`}
       id="about-us"
     >
       <div className="mb-14 w-full flex flex-col items-start mt-9 gap-4 md:flex-row ">
