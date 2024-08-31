@@ -8,6 +8,8 @@ import { Footer } from '@/components/shared/Footer/Footer';
 
 
 import 'bootstrap/dist/css/bootstrap.min.css'
+import '../../public/fonts/abrilFatface/stylesheet.css'
+import '../../public/fonts/roboto/stylesheet.css'
 import '../sass/globals.sass'
 
 

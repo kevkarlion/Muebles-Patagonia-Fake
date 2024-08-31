@@ -15,7 +15,7 @@ export default function Category(props: CategoryProps) {
   const path = usePathname()
   const [currentUrl, setCurrentUrl] = useState('')
   const [stateMainIsReady, setStateIsReady] = useState(false)
-  console.log(path)
+ 
 
   useEffect(() => { 
     setCurrentUrl(path)
@@ -25,10 +25,6 @@ export default function Category(props: CategoryProps) {
   if(!stateMainIsReady) return <Loading />
 
   
-
-  const { categories } = props.params;
-  console.log(categories)
-
   return (
     <>
       <div className="w-full">

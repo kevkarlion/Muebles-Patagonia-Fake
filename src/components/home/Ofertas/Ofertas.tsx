@@ -3,21 +3,16 @@ import Image from "next/image";
 import Button from "react-bootstrap/Button";
 import Card from "react-bootstrap/Card";
 
-import { Abril_Fatface } from "next/font/google";
 
-const abrilFatface = Abril_Fatface({
-  weight: ["400"],
-  subsets: ["latin"],
-});
 
 import styles from "./Ofertas.module.sass";
 
 export const Ofertas = () => {
   return (
-    <div className="mt-20 mb-8 w-full overflow-hidden">
+    <div className="mt-20 mb-8 w-full overflow-hidden font-roboto ">
       <div className="w-full flex justify-center  mb-12 ">
         <h1
-          className={` ${styles["title-hero"]} uppercase absolute top-[160px] text-white z-10 flex justify-center text-6xl text-center   font-bold sm:text-7xl md:!text-7xl xl:!text-7xl border-b-2  `}
+          className={` uppercase absolute top-[160px] text-white z-10 flex justify-center text-6xl text-center   font-bold sm:text-7xl md:!text-7xl xl:!text-7xl border-b-2  font-abril`}
         >
           Ofertas
         </h1>
@@ -38,7 +33,7 @@ export const Ofertas = () => {
       </div>
 
       <h2
-        className={` ${styles["title-hero"]} uppercase   flex justify-center text-6xl text-center   font-bold sm:text-7xl md:!text-7xl xl:!text-7xl  mb-10 mt-28 `}
+        className={` font-abril uppercase   flex justify-center text-6xl text-center   font-bold sm:text-7xl md:!text-7xl xl:!text-7xl  mb-10 mt-28 `}
       >
         Living
       </h2>
@@ -58,7 +53,7 @@ export const Ofertas = () => {
                 />
               </div>
               <Card.Body className="w-auto p-0 ">
-                <Card.Title className="pt-2 pb-2 text-center bg-black text-white rounded-b-md">
+                <Card.Title className="pt-2 pb-2 text-center bg-black text-white rounded-b-md ">
                   Luxura Home
                 </Card.Title>
                 <Card.Text className="font-light">
@@ -149,7 +144,7 @@ export const Ofertas = () => {
         </div>
       </div>
       <h2
-        className={` ${styles["title-hero"]} uppercase   flex justify-center text-6xl text-center   font-bold sm:text-7xl md:!text-7xl xl:!text-7xl  mb-10 mt-28 `}
+        className={`  uppercase   flex justify-center text-6xl text-center   font-bold sm:text-7xl md:!text-7xl xl:!text-7xl  mb-10 mt-28 font-abril `}
       >
         Comedor
       </h2>
@@ -260,7 +255,7 @@ export const Ofertas = () => {
         </div>
       </div>
       <h2
-        className={` ${styles["title-hero"]} uppercase   flex justify-center text-6xl text-center   font-bold sm:text-7xl md:!text-7xl xl:!text-7xl  mb-10 mt-28 `}
+        className={`  uppercase   flex justify-center text-6xl text-center   font-bold sm:text-7xl md:!text-7xl xl:!text-7xl  mb-10 mt-28 font-abril`}
       >
         Cocina
       </h2>
@@ -372,7 +367,7 @@ export const Ofertas = () => {
       </div>
 
       <h2
-        className={` ${styles["title-hero"]} uppercase   flex justify-center text-6xl text-center   font-bold sm:text-7xl md:!text-7xl xl:!text-7xl  mb-10 mt-28 `}
+        className={` uppercase   flex justify-center text-6xl text-center   font-bold sm:text-7xl md:!text-7xl xl:!text-7xl  mb-10 mt-28 font-abril`}
       >
         Relax
       </h2>

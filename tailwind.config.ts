@@ -17,6 +17,10 @@ const config: Config = {
         'lg': '992px',
         'xl': '1280px',
       },
+      fontFamily: {
+        abril: ['Abril Fatface', 'serif'],
+        roboto: ['Roboto', 'serif']
+      }
     },
   },
   plugins: [],

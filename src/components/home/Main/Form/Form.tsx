@@ -5,33 +5,30 @@ import Col from "react-bootstrap/Col";
 import Form from "react-bootstrap/Form";
 import Row from "react-bootstrap/Row";
 import FloatingLabel from "react-bootstrap/FloatingLabel";
-import { Abril_Fatface } from "next/font/google";
 import Image from "next/image";
+import Link from "next/link";
 import styles from "./Form.module.sass";
 
-const abrilFatface = Abril_Fatface({
-  weight: ["400"],
-  subsets: ["latin"],
-});
 
 export const Formulario = () => {
   return (
     <Form
-      className={` ${styles["container-form"]} px-4  w-full pb-11`}
+      className={` ${styles["container-form"]} px-4  w-full pb-11 font-roboto`}
       id="form"
     >
       <div
         className={`flex flex-col justify-center items-center text-center gap-3 mb-6 pt-11 `}
       >
-        <h1 className={`${abrilFatface.className} text-4xl sm:text-6xl`}>
-          Escribenos
+        <h1 className={`font-abril text-4xl sm:text-6xl`}>
+          Escríbenos
         </h1>
-        <h2 className="text-xl font-light">
+        <h2 className="text-xl font-light ">
           Estamos para ayudarte a encontrar tu diseño perfecto
         </h2>
-        <a className="md:hidden" href="#">
-          <div className="hover:bg-yellow-500 w-[350px] h-[80px] border-3 border-black flex justify-center items-center bg-yellow-400">
-            <p className="text-black	text-center uppercase font-bold text-xl ml-5">
+        {/* View mobile */}
+        <Link className="md:hidden" href="/catalogo/ofertas">
+          <div className="hover:bg-yellow-500 w-[350px] h-[80px] border-1 border-black flex justify-center items-center bg-yellow-400">
+            <p className="text-black	text-center uppercase font-normal text-xl ml-5">
               ! mira nuestras <br /> ofertas especiales !
             </p>
             <Image
@@ -41,7 +38,7 @@ export const Formulario = () => {
               src={"/icons/click-hand.svg"}
             />
           </div>
-        </a>
+        </Link>
       </div>
 
       <div className="md:flex justify-around">
@@ -100,7 +97,7 @@ export const Formulario = () => {
             src={"/img-form/img-form-700.webp"}
             loading='lazy'
           />
-          <a href="#">
+          <Link href="/catalogo/ofertas">
             <div className="hover:bg-yellow-500 w-[400px] h-[150px] absolute bottom-[75px]  left-1/2 transform -translate-x-1/2 border-3 border-black flex justify-center items-center bg-yellow-400">
               <p className="text-black	text-center uppercase font-bold text-2xl ml-5">
                 ! mira nuestras <br /> ofertas especiales !
@@ -112,7 +109,7 @@ export const Formulario = () => {
                 src={"/icons/click-hand.svg"}
               />
             </div>
-          </a>
+          </Link>
         </div>
       </div>
     </Form>

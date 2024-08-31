@@ -5,8 +5,8 @@ import styles from "./Footer.module.sass";
 export const Footer = () => {
   return (
     <footer
-      className={` text-white py-4 sm:h-[480px] ${styles["container-footer"]}`}
-      id=" redes"
+      className={` text-white py-4 sm:h-[480px] ${styles["container-footer"]} font-roboto`}
+      id="redes"
     >
       <div className="flex flex-col    items-center h-full  flex-1 justify-end  sm:px-8 ">
         {/* contenedor redes y contacto */}
@@ -14,7 +14,7 @@ export const Footer = () => {
           {/* contenedor redes */}
           <div className="flex flex-col justify-start items-center  md:!mb-0">
             <h5 className="text-xl border-b-[1px] pb-1">
-              Visita nuestras redes
+              Visitá nuestras redes
             </h5>
             <ul className="flex flex-col gap-3 mt-6  font-light">
               <li className="flex gap-4 ">
