@@ -28,7 +28,7 @@ export const Hero = () => {
                 duration: 0.7,
                 ease: easeOut,
               }}
-              className={`font-abril font-bold will-change-transform uppercase lg:w-[700px] xl:w-[800px] lg:text-6xl  text-5xl px-4 text-white drop-shadow-xl   lg:text-start `}
+              className={`font-abril will-change-transform uppercase lg:w-[700px] xl:w-[800px] lg:text-6xl  text-5xl px-4 text-white drop-shadow-xl   lg:text-start `}
             >
               Muebles de Diseño Exclusivo para Cada Espacio
             </motion.h1>

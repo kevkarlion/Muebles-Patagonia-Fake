@@ -13,13 +13,13 @@ import styles from "./Form.module.sass";
 export const Formulario = () => {
   return (
     <Form
-      className={` ${styles["container-form"]} scroll-mt-[80px] px-4  w-full pb-11 font-roboto`}
-      id="form"
+      className={` ${styles["container-form"]}  px-4  w-full pb-11 font-roboto`}
+      
     >
       <div
         className={`flex flex-col justify-center items-center text-center gap-3 mb-6 pt-11 `}
       >
-        <h1 className={`font-abril font-bold text-4xl sm:text-6xl`}>
+        <h1 className={`font-abril font-bold text-4xl sm:text-6xl scroll-mt-[120px]`} id="form">
           Escríbenos
         </h1>
         <h2 className="text-xl font-light ">

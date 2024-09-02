@@ -44,7 +44,7 @@ export const BarNav = () => {
           fixed="top"
           key={expand}
           expand={expand}
-          className={`${styles["custom-navbar"]}  bg-body-tertiary h-20 drop-shadow-xl`}
+          className={`${styles["custom-navbar"]} bg-body-tertiary h-20 drop-shadow-xl`}
         >
           <Container fluid>
             <Navbar.Brand

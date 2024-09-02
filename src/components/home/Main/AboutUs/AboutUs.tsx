@@ -2,17 +2,16 @@ import Button from "react-bootstrap/Button";
 
 import styles from "./AboutUs.module.sass";
 
-
 export const AboutUs = () => {
   return (
     <div
-      className={` ${styles["container-main"]} scroll-mt-[80px] flex flex-col pt-10 justify-center items-center text-center px-10 md:gap-11 mb-8 md:mb-16 container`}
-      id="about-us"
+      className={` ${styles["container-main"]}  flex flex-col  justify-center items-center text-center px-10 md:gap-11 mb-8 md:mb-16 container`}
     >
-      <div className="mb-14 w-full flex flex-col items-start mt-9 gap-4 md:flex-row ">
+      <div className="mb-14 w-full flex flex-col items-start gap-4 md:flex-row ">
         <div className="flex flex-col justify-center items-center md:items-start">
           <h1
-            className={`font-abril uppercase text-5xl max-w-max font-semibold sm:text-6xl md:whitespace-nowrap md:text-start mb-2 `}
+            className={`font-abril uppercase text-5xl max-w-max font-semibold sm:text-6xl md:whitespace-nowrap md:text-start mb-2 scroll-mt-[80px] pt-20 `}
+            id="about-us"
           >
             Sobre nosotros
           </h1>

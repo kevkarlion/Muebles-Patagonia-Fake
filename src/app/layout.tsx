@@ -11,6 +11,7 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 import '../../public/fonts/abrilFatface/stylesheet.css'
 import '../../public/fonts/roboto/stylesheet.css'
 import '../sass/globals.sass'
+import { useEffect } from 'react';
 
 
 const roboto = Roboto({
@@ -25,6 +26,7 @@ export const metadata: Metadata = {
 };
 
 export default function RootLayout({ children ,}: Readonly <{ children: React.ReactNode;}>) {
+
 
 
   return (
