@@ -1,5 +1,6 @@
 'use client'
 import { CategoryList } from "@/components/home/CategoryList";
+
 import { Ofertas } from "@/components/home/Ofertas";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
