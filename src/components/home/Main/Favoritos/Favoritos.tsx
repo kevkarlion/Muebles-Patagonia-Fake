@@ -74,7 +74,8 @@ export const Favoritos = () => {
             </p>
             <Button
               variant="dark"
-              className="w-32 place-self-center mb-3 sm:w-36 sm:h-12  text-base uppercase font-normal	font-roboto"
+              href="/catalogo/living"
+              className="flex w-32 place-self-center justify-center items-center mb-3 sm:w-36 sm:h-12  text-base uppercase font-normal	font-roboto"
             >
               Colección
             </Button>{" "}
@@ -112,7 +113,8 @@ export const Favoritos = () => {
             </p>
             <Button
               variant="dark"
-              className="w-32 place-self-center mb-3 sm:w-36 sm:h-12  text-base uppercase font-normal font-roboto"
+              className="w-32 place-self-center flex justify-center items-center  mb-3 sm:w-36 sm:h-12  text-base uppercase font-normal font-roboto"
+              href="/catalogo/comedor"
             >
               Colección
             </Button>{" "}
@@ -148,7 +150,8 @@ export const Favoritos = () => {
             </p>
             <Button
               variant="dark"
-              className="w-32 place-self-center mb-3 sm:w-36 sm:h-12  text-base uppercase font-normal font-roboto"
+              className="flex justify-center items-center w-32 place-self-center mb-3 sm:w-36 sm:h-12  text-base uppercase font-normal font-roboto"
+              href="/catalogo/cocina"
             >
               Colección
             </Button>{" "}
@@ -188,7 +191,8 @@ export const Favoritos = () => {
             </p>
             <Button
               variant="dark"
-              className="w-32 place-self-center mb-3 sm:w-36 sm:h-12  text-base uppercase font-normal font-roboto"
+              className="flex justify-center items-center w-32 place-self-center mb-3 sm:w-36 sm:h-12  text-base uppercase font-normal font-roboto"
+              href="/catalogo/relax"
             >
               Colección
             </Button>{" "}

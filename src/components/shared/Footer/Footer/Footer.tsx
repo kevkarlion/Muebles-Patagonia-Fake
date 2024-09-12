@@ -21,7 +21,7 @@ export const Footer = () => {
                 <Image
                   width={30}
                   height={30}
-                  src={"redes/instagram.svg"}
+                  src={'/redes/instagram.svg'}
                   alt="instagram"
                 />
                 <a href="#" className="text-white">
@@ -32,7 +32,7 @@ export const Footer = () => {
                 <Image
                   width={30}
                   height={30}
-                  src={"redes/facebook.svg"}
+                  src={'/redes/facebook.svg'}
                   alt="facebook"
                 />
                 <a href="#" className="text-white">
@@ -43,7 +43,7 @@ export const Footer = () => {
                 <Image
                   width={30}
                   height={30}
-                  src={"redes/whatsapp.svg"}
+                  src={'/redes/whatsapp.svg'}
                   alt="whatsapp"
                 />
                 <a href="#" className="text-white">
@@ -64,7 +64,7 @@ export const Footer = () => {
                   <Image
                     width={30}
                     height={30}
-                    src={"/googlemaps.svg"}
+                    src={'/googlemaps.svg'}
                     alt="location"
                     className=""
                   />

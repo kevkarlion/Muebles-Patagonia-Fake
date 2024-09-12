@@ -10,28 +10,24 @@ import styles from "./Ofertas.module.sass";
 export const Ofertas = () => {
   return (
     <div className="mt-20 mb-8 w-full overflow-hidden font-roboto ">
-      <div className="w-full flex justify-center  mb-12 ">
-        <h1
-          className={` uppercase absolute top-[160px] text-white z-10 flex justify-center text-6xl text-center   font-bold sm:text-7xl md:!text-7xl xl:!text-7xl border-b-2  font-abril`}
-        >
-          Ofertas
-        </h1>
+       <div className="w-full flex justify-center  mb-12 ">
+        <h1 className={` font-abril uppercase absolute top-[160px] text-white z-10 flex justify-center text-6xl text-center   font-bold sm:text-7xl md:!text-7xl xl:!text-7xl border-b-2  `} >Ofertas</h1>
         <h2 className="uppercase absolute top-[245px] sm:top-[265px] text-white  z-10 flex justify-center text-base text-center w-60  font-light  md:text-xl drop-shadow-xl ">
           Conocé todas las promociones disponibles, comprando desde nuestra web!{" "}
         </h2>
         <div className="relative w-full  h-[550px]  brightness-50">
-          <Image
-            className=""
-            src="/categorias/hero-categorias-1200.webp"
-            fill={true}
-            sizes="(max-width: 768px) 50vw, 100vw"
-            alt="sillon-blanco"
-            style={{ objectFit: "cover" }}
-            priority
+          <Image 
+          className=""
+          src="/categorias/hero-categorias-1200.webp"
+          fill={true}
+          sizes="(max-width: 768px) 50vw, 100vw"
+          alt="sillon-blanco"
+          style={{ objectFit: "cover" }}
+          priority
           />
         </div>
       </div>
-
+     
       <h2
         className={` font-abril uppercase   flex justify-center text-6xl text-center   font-bold sm:text-7xl md:!text-7xl xl:!text-7xl  mb-10 mt-28 `}
       >
